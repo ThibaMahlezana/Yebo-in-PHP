@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900|Open+Sans:400,600");
+body {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#dabea6), color-stop(#cecbb1), color-stop(#c7d6c5), color-stop(#caddd8), to(#d7e3e5));
+  background-image: linear-gradient(to left top, #dabea6, #cecbb1, #c7d6c5, #caddd8, #d7e3e5);
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

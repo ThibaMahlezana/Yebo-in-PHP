@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900|Open+Sans:400,600");
+
+$color-01: #94ab9e;
+$color-02: #ea9fbc;
+$color-03: #ceb0b0;
+$color-04: #e1bc63;
+$color-05: #73e2b7;
+$color-06: #98e273;
+$color-07: #d797ed;
+
+body {
+  background-image: linear-gradient(
+    to left top,
+    #dabea6,
+    #cecbb1,
+    #c7d6c5,
+    #caddd8,
+    #d7e3e5
+  );
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
