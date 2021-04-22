@@ -1,0 +1,12 @@
+
+.photo-grid{
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+    background: #fff;
+    padding: 2px;
+    border-radius: 10px;
+}
+photo-grid img{
+    border-radius: 10px;
+}

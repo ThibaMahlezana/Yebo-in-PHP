@@ -1,0 +1,328 @@
+/***************************************************************************************************************
+                                                HOME STYLES 
+  **************************************************************************************************************/
+
+/***************************************************************************************************************
+                                                GLOBAL STYLES - HOMEPAGE 
+  **************************************************************************************************************/
+body{
+    background: #fff;
+}
+i{
+    color: #7b94b2;
+}
+.alert{
+    margin: 0;
+    top: 0;
+    z-index: 1031;
+    font-size: 20px;
+}
+.home-navbar {
+    background: #F0E8E0;
+    padding: 5px 5%;
+}
+.home-navbar > span:nth-of-type(1) {
+    font-size: 50px;
+    color: #808080;
+}
+.home-navbar > span:nth-of-type(2) {
+    font-size: 15px;
+    margin-left: 20px;
+    color: #7b94b2;
+}
+.home-navbar > img {
+    margin: 0;
+    width: 100px;
+}
+
+/***************************************************************************************************************
+                                          SIGNIN BOX - HOMEPAGE 
+  **************************************************************************************************************/
+
+.signin-area{}
+.signin-area > form > input[type='password'], input[type='text'] {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.signin-area > form > button{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7b94b2; 
+    background: #7b94b2;
+    color: #fff;
+    
+}
+.signin-area > form > button:hover{
+    background: #a2bcdb;
+    color: #fff;
+    border: 1px solid #b5b5b5;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.signin-area p{
+    line-height: 0.5em;
+    margin-top: 3px 2px;
+}
+.signin-area i{
+    font-size: larger;
+}
+.signin-area i:hover{
+    text-decoration: none;
+    background: #b5b5b5;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.signin-area > form > a:hover{
+    text-decoration: none;
+    position: relative;   
+}
+ 
+.signin-area > form > a[data-title]:hover:after {
+  content: attr(data-title);
+  padding: 4px 8px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 140%;
+  z-index: 20;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #222;
+  -webkit-box-shadow: 0px 0px 4px #F0E8E0;
+  box-shadow: 0px 0px 4px #222;
+  background: #fff;
+}
+
+/***************************************************************************************************************
+                                          SIGNUP BOX - HOMEPAGE 
+  **************************************************************************************************************/
+.signup-area{
+    background: #fff;
+    color: #808080;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 1.2em;
+}
+.signup-area > form > input[type='text']{
+    background: #F0E8E0;
+    color:#808080;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    height:40px;
+    width:96%;
+    font-size:large;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+}
+.signup-area > form > input[type="password"]{
+    background: #F0E8E0;
+    border-radius: 5px;
+    width: 96%;
+    height: 40px;
+    font-size: large;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+}
+.signup-area > form > input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.signup-area > form > p{
+    margin-bottom: 2px;
+    line-height: 1.1em;
+}
+.signup-area > form > .btn{
+    width: 99%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
+    font-size: large;
+    background: #7b94b2;
+    color: #fff;
+}
+signup-area > form > .btn:hover{
+    background: #a2bcdb;
+    color: #fff;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.signup-area > form > i{
+    color: #7b94b2;
+}
+.signup-area > form > .signup-options{
+    background: #F0E8E0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    line-height: 1.2em;
+}
+.signup-area > form > .signup-options p{
+    line-height: 0.5em;
+}
+.signup-area > form > .signup-options > input[type="radio"]:not(old){
+    width: 20px;
+    height: 20px;
+}
+
+
+/***************************************************************************************************************
+                                          CONTENT - HOMEPAGE 
+  **************************************************************************************************************/
+.test-type-box {
+    font-size: 25px;
+    height: 220px;
+}
+.test-type-box > div {
+    background: #FFF;
+    padding: 5px;
+    margin: 0 20px 0 0;
+    padding: 50px 0 0 0;
+    height: 150px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+}
+.test-type-box > div > i {
+    font-size: 4em;
+}
+.test-type-box > div > p {
+    line-height: 2.5em;
+    color: #808080;
+}
+.test-type-box > div:hover {
+    cursor: pointer;
+    background: #b7c7db;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;        
+}
+.header-wrap{
+    background: #F0E8E0;
+    padding-bottom: 10px;
+}
+.home-test-sec p{
+    line-height: 1em;
+}
+.home-test-sec > .row > .span7 > .alert-danger{
+    font-size: large;
+}
+.home-test-sec-header{
+    font-size: 55px;
+    color: #808080;
+}
+.home-test-sec-desc{
+    font-size: 20px;
+    color: #808080;
+}
+.home-test-sec p > input[type='text']{
+    font-size: 20px;
+    margin: 0;
+    width: 400px;
+    height: 40px;
+}
+.home-test-sec p > input[type='text']:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;            
+}
+.home-test-sec p > button{
+    height: 45px;
+    background: #7b94b2;
+    color: #fff;
+}
+.home-test-sec p > button:hover{
+    background: #a2bcdb;
+    color: #fff;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.test-account-form{
+    background: #fff;
+    border-radius: 5px;
+    color: #808080;
+}
+p.ad-text{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #808080;
+}
+p.ad-text-desc{
+    font-size: 20px;
+    text-align: center;
+    color: #808080;
+}
+.home-desc{
+    padding: 0 20%;
+}
+.home-desc-tile{
+    background: #F0E8E0;
+    margin: 10px 5px;
+    border-radius: 10px;
+    width: 23%;
+    display: inline-block;
+    text-align: center;
+}
+div.home-desc-tile:hover{
+    background: #d0cfcf;
+    cursor: pointer;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.home-desc-tile-header{
+    font-size: 20px;
+    font-weight: 500;
+    color: #808080;
+}
+.home-desc-tile-desc{
+    color: #808080;
+}
+.footer-area{
+    background: #F0E8E0;
+}
+#test_company_input {
+    display: none;
+}
+
+/***************************************************************************************************************
+                                                MEDIA QUERIES 
+  **************************************************************************************************************/
+@media (min-width: 1600px){}
+@media (min-width: 1440px){}
+@media (min-width: 1280px){}
+@media (min-width: 1200px){}
+@media (min-width: 800px){}
+@media (min-width: 768px){}
+@media (min-width: 684px){}
+@media (min-width: 600px){}
+@media (min-width: 414px){}
+@media (min-width: 412px){}
+@media (min-width: 375px){}
+@media (min-width: 360px){}
+@media (min-width: 320px){}
+@media (min-width: 320px){}

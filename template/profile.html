@@ -1,0 +1,570 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title> aypage | profile ...</title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="styles/metro-bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+        <link rel="stylesheet" type="text/css" href="styles/basic.css" />
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="styles/profile.css" />
+
+    </head>
+    <body>
+        <!--- main navbar --->
+        <div class="navbar-box">
+            <div class="navbar-sec-1">
+                <a href="timeline.php"><i class="flaticon-list30"></i> Timeline</a>
+                <a href="chat.php"><i class="flaticon-speech59"></i> Chats</a>
+            </div>
+            <div class="navbar-sec-2">
+                <input type="text" placeholder="search..."/>
+                <div class="notifications-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>5</span>
+                        <i class="flaticon-bell13"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda, @ayttiq and @bra_d followed you</span>
+                                <span class="notifications-dropdown-time pull-right">1d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba, Your Account is still not activated</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba check your privacy settings</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="notifications.php">More...</a></li>
+                    </ul>
+                </div>
+                <div class="messages-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>25</span>
+                        <i class="flaticon-envelope4"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li><a href="messages.php">More...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-sec-3">
+                <a href="settings.php"><i class="flaticon-cog2"></i> settings</a>
+                <a href="help.php"><i class="flaticon-question22"></i> help</a>
+                <a href="signed-out.php"><i class="flaticon-sign4"></i> sign out</a>
+                <div class="pull-right">
+                    <a class="intro-tool pull-right" href="javascript:void(0);" onclick="javascript:introJs().start();">
+                        <i class="flaticon-information34"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!--- row --->
+            <div class="row">
+                <!--- navigation section --->
+                <div class="span3">
+                    <!--- current userbar --->
+                    <div class="current_user_box" data-step="1" data-intro="This is your basic profile information and a link to your full profile page.">
+                        <div class="current_user_photo">
+                            <img alt="avatar" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="current_user_body">
+                            <p class="current_user_username"><a href="profile.php"><strong>@username</strong></a></p> 
+                            <p class="current_user_description">short bio of the user</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="current_user_type">
+                            <a href="#"><i class="flaticon-user77"></i></a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="current_user_name">Name Surname</p> 
+                    </div>
+                    
+                    <!--- profile status  --->
+                    <div class="account-status">
+                        <p>Account Status</p>
+                        <p><strong>Joined</strong> : date </p>
+                        <p><strong>Subscription </strong></p>
+                        <p>Trial 
+                            date - date
+                        </p>
+                        <p><strong> 20 </strong> days left</p>
+                    </div>
+
+                </div>
+
+                <!--- content sestion --->
+                <div class="span6">
+                    <!---- title bar ----->
+                    <div class="title-bar" data-step="3" data-position="bottom" data-intro="This is where you will see where you are or which page you are in currently.">
+                        <div class="title-bar-icon">
+                            <i class="flaticon-user77"></i>
+                        </div>
+                        <div class="title-bar-heading"><p>Profile</p></div>
+                        <div class="title-bar-desc">
+                           <strong> Name, </strong> view and edit your profile details here
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+
+                    <!---- profile status ----->
+                    <div class="profile-status-box ">
+                        <p id="profile-following-btn"><a>20</a><br/> Following</p>
+                        <p id="profile-followers-btn"><a>20</a><br/> Followers</p>
+                        <p><a>20</a><br/> Posts</p>
+                    </div>
+
+
+                    <div id="profile-following-view" class="profile-following-view-box">
+                        <div class="profile-following-header">Following 
+                            <a id="following-profile-view-remove" class="pull-right">close</a>
+                            <span><input type="text" placeholder="search..."/></span>
+                        </div>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                    </div>
+
+                    <div id="profile-followers-view" class="profile-following-view-box">
+                        <div class="profile-following-header">Followers 
+                            <a id="followers-profile-view-remove" class="pull-right">close</a>
+                            <span><input type="text" placeholder="search..."/></span>
+                        </div>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+                        <p><img alt="profile-photo" src="img/avatar.jpg"/> 
+                            <span>Name Surname</span> @username 
+                            <i class="flaticon-user77"></i>
+                            <a class="pull-right"><i class="flaticon-speech59"></i> 2100</a>
+                        </p>
+
+                    </div>
+
+                    <div class="alert alert-error">
+                        <button class="close" data-dismiss="alert">×</button> Warning Message
+                    </div>
+
+                    <div class="profile-verify-bar">
+                        <p><strong>Asanda</strong> , your account is not verified.</p>
+                        <p>Please be aware that if not verified within in 45 hours it will be removed.</p>
+                        <p><span class="btn" id="request-code-btn">request code</span> 
+                            <span class="btn" id="input-code-btn">Input code</span>
+                        </p>
+                    </div>
+
+
+                    <div class="profile-verify-save-bar">
+                        <p>Please provide us with an Email or Phone to verify your account.</p>
+                        <p>We will send an Email or an SMS with a code.</p>
+                        <p><input type="text"/> <span class="btn">send</span></p>
+                    </div>
+
+                    <div class="profile-verify-send-bar">
+                        <p>Please input a five digit code that was sent to you by Email or Phone</p>
+                        <p><input type="text"/> <span class="btn">verify</span></p>
+                    </div>
+
+                    <div class="alert alert-error profile-information-bar-edit-alert">
+                        <i class="flaticon-check30"></i>
+                        <button class="close" data-dismiss="alert">×</button>
+                        Warning Message
+                    </div>
+
+                    <div class="alert alert-success profile-information-bar-edit-alert">
+                        <i class="flaticon-check30"></i>
+                        <button class="close" data-dismiss="alert">×</button>
+                        Warning Message
+                    </div>
+
+                    <div class="profile-information-bar">
+                        <p><i class="flaticon-information34"></i> Profile Information 
+                            <button id="profile_edit_btn" type="submit" class="pull-right btn"><i class="flaticon-font2"></i> edit</button>
+                        </p>
+                        <div class="profile-information_header">
+                            <div class="profile-information-header-photo">
+                                <img alt="photo" src="img/avatar.jpg"/>
+                                <input type="file"/>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <p>@username</p>
+                        <p><strong> First Name</strong> : Name 
+                        <p><strong> Last Name</strong> : Surname</p>
+                        <p><i class="flaticon-information34"></i> short description of bio</p>
+                        <p><i class="flaticon-envelope4"></i> mail@mail.com</p>
+                        <p><i class="flaticon-telephone66"></i> 0000 000 000</p>
+                    </div>
+
+                    <div class="profile-information-bar">
+                        <p><i class="flaticon-information34"></i> Profile Information 
+                            <button id="profile_edit_btn" type="submit" class="pull-right btn"><i class="flaticon-font2"></i> edit</button>
+                        </p>
+                        <div class="profile-information_header">
+                            <div class="profile-information-header-photo">
+                                <img alt="photo" src="img/avatar.jpg"/>
+                                <input type="file"/>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <p>@username</p>
+                        <p><strong> Name</strong> : Name Ltd 
+                        <p><i class="flaticon-information34"></i> Short Description of Bio</p>
+                        <p><i class="flaticon-envelope4"></i> mail@mail.com</p>
+                        <p><i class="flaticon-telephone66"></i> 0000 000 000</p>
+                    </div>
+
+                    <div id="profile-info-edit-form" class="profile-information-bar-edit">
+                        <form method="post" action="">
+                            <input type="hidden" name="form_type" value="edit-information"/>
+                            <p><i class="flaticon-information34"></i> Edit Profile Information
+                                <button type="submit" class="pull-right btn"><i class="flaticon-save8"></i> save</button>
+                            </p>
+
+                            <p><strong> First Name</strong> : <input name="firstName" type="text" value="Name"/></p>
+                            <p><strong> Last Name</strong> : <input name="lastName" type="text" value="Surname"/></p>
+                            <p><i class="flaticon-information34"></i>
+                                <strong>Bio</strong>
+                                <textarea name="bio">short description or bio</textarea>
+                            </p>
+                            <p><i class="flaticon-envelope4"></i><strong>Email</strong>
+                                <input type="text" value="mail@mail.com"/>
+                            </p>
+                            <p><i class="flaticon-telephone66"></i><strong>Phone</strong>
+                                <input type="text" value="0000 000 000"/>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div id="profile-info-edit-form" class="profile-information-bar-edit-company">
+                        <form method="post" action="">
+                            <input type="hidden" name="form_type" value="edit-information"/>
+                            <p><i class="flaticon-information34"></i> Profile Information 
+                                <button type="submit" class="pull-right btn"><i class="flaticon-save8"></i> save</button>
+                            </p>
+
+                            <p><strong> First Name</strong> : <input name="name" type="text" value="Name"/></p>
+                            <p><i class="flaticon-information34"></i>
+                                <strong>Bio</strong>
+                                <textarea name="companyBio">Bio of the company</textarea>
+                            </p>
+                            <p><i class="flaticon-envelope4"></i><strong>Email</strong>
+                                <input type="text" value="mail@mail.com"/>
+                            </p>
+                            <p><i class="flaticon-telephone66"></i><strong>Phone</strong>
+                                <input type="text" value="0000 000 000"/>
+                            </p>
+                        </form>
+                    </div>
+
+                    <!--- ACCOUNT VERIFICATION SECTION --->
+                    <div class="profile-verification-bar">
+                        <p><strong>Account not verified</strong></p>
+
+                        <p>An Email with a code will be sent to <strong>mail@mail.com</strong> <a href="#EditContactModal" data-toggle="modal">edit</a></p>
+                        <form action="" method="post">
+                            <input class="btn" type="submit" name="submit" value="Send Code"/>
+                        </form>
+                        <p>An SMS with a code will be sent to <strong>0000 000 000</strong> <a href="#EditContactModal" data-toggle="modal">edit</a></p>
+                        <form action="" method="post">
+                            <input class="btn" type="submit" name="submit" value="Send Code"></input>
+                        </form>
+
+                        <p>Please Edit your Account and Provide at least an Email/Phone</p>
+                        <!--- EDIT EMAIL / PHONE MODAL WINDOW --->
+                        <div class="modal hide fade" id="EditContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"> x </button>
+                                Edit  Email Address
+                            </div>
+                            <div class="modal-body">
+                                <p>Update your Email Address here, so you can verify your account</p>
+                                <form action="" method="post">
+                                    <input type="text" value="mail@mail.com" name="email" />
+                                    <button type="submit" class="btn">update</button>
+                                </form>
+                            </div>
+
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"> x </button>
+                                Edit Phone Number
+                            </div>
+                            <div class="modal-body">
+                                <p>Update your Phone Number here, so you can verify your account</p>
+                                <form action="" method="post">
+                                    <input type="text" value="<?php echo $f_phone; ?>" name="phone" />
+                                    <button type="submit" class="btn">update</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer"></div>
+                        </div>
+
+                        <p>Then input;</p>
+                        <label>the five digits code sent to you by an SMS/Email, <a href="#">resend</a></label>
+                        <form action="" method="post">
+                            <input type="text" name="code"/>
+                            <input class="btn" type="submit" name="verify_button" value="verify"></input>
+                        </form>
+                        <p>Please note if your account is not verified within 48 hours, it will be deleted</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <!------- active chats ------->
+                    <p class="active-chats-heading"> Active Chats</p>
+
+                    <div data-step="6" data-position="left" data-intro="This is a list of trending chats by people or companies you follow.">
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom active chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image active chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- video active chat ------->
+                        <div class="video-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- link active chat ------->
+                        <div class="link-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a href="http://asa.com">http://asa.com</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- thought active chat ------->
+                        <div class="thought-active-chat">
+                            <a><i class="flaticon-light45"></i></a>
+                            <a>About the my future.</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- quote active chat ------->
+                        <div class="quote-active-chat">
+                            <a><i class="flaticon-quote2"></i></a>
+                            <a>"Focus on the good"...</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- popular chats ------->
+                    <p class="active-chats-heading"> Popular Chats</p>
+
+                    <div data-step="7" data-position="left" data-intro="This is a list of trending chats by everyone or every company based on your location.">
+                        <!------- topic popular chat-->
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom popular chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image popular chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- block user ------->
+                    <div class="block-user-bar">
+                        <a data-toggle="modal" href="#block-user-modal" role="button"><i class="flaticon-remove11"></i> block</a>
+                        <a href="#"><i class="flaticon-search19"></i> search</a>
+                        <a href="#"><i class="flaticon-bull1"></i> report</a>
+                    </div>
+
+                    <!------- block user modal ------->
+                    <div class="modal hide fade" id="block-user-modal" role="dialog">
+                        <div class="modal-dialog"></div>
+                        there is nothing
+                    </div>
+
+
+                    <!------- footer ------->
+                    <div class="mini-footer">
+                        <a href="help.php"> help</a>
+                        <a href="terms.php"> terms and conditions</a>
+                        <a href="privacy.php"> privacy</a>
+                        <a href="disclaimer.php"> disclaimer</a>
+                        <a href="ads.php"> ads</a>
+                        <div class="divider"></div>
+                        <p><strong> aypage</strong> is a product of<a href="http://www.ayttiq.com"> ayttiq technologies</a></p>
+                        <p>&copy; 2016, All rights reserved. </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--- JAVA SCRIPTS FILES ---->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/module-user.js"></script>
+
+    </body>
+</html>
+

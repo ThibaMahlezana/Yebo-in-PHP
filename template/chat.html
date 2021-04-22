@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title> aypage | chat ...</title>
+
+        <!-- stylesheets & JavaScripts -->
+        <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+        <link rel="stylesheet" type="text/css" href="styles/metro-bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="styles/basic.css" />
+        <link rel="stylesheet" type="text/css" href="styles/chats.css" />
+
+    </head>
+    <body>
+        <!--- main navbar --->
+        <div class="navbar-box">
+            <div class="navbar-sec-1">
+                <a href="timeline.php"><i class="flaticon-list30"></i> Timeline</a>
+                <a href="chat.php"><i class="flaticon-speech59"></i> Chats</a>
+            </div>
+            <div class="navbar-sec-2">
+                <input type="text" placeholder="search..."/>
+                <div class="notifications-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>5</span>
+                        <i class="flaticon-bell13"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda, @ayttiq and @bra_d followed you</span>
+                                <span class="notifications-dropdown-time pull-right">1d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba, Your Account is still not activated</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba check your privacy settings</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="notifications.php">More...</a></li>
+                    </ul>
+                </div>
+                <div class="messages-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>25</span>
+                        <i class="flaticon-envelope4"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li><a href="messages.php">More...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-sec-3">
+                <a href="settings.php"><i class="flaticon-cog2"></i> settings</a>
+                <a href="help.php"><i class="flaticon-question22"></i> help</a>
+                <a href="signed-out.php"><i class="flaticon-sign4"></i> sign out</a>
+                <div class="pull-right">
+                    <a class="intro-tool pull-right" href="javascript:void(0);" onclick="javascript:introJs().start();">
+                        <i class="flaticon-information34"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <!------------ chat user --------->
+                    <div class="current_user_box" data-step="1" data-intro="This is your basic profile information and a link to your full profile page.">
+                        <div class="current_user_photo">
+                            <img alt="avatar" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="current_user_body">
+                            <p class="current_user_username"><a href="profile.php"><strong>@username</strong></a></p> 
+                            <p class="current_user_description">short bio of the user</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="current_user_type">
+                            <a href="#"><i class="flaticon-user77"></i></a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="current_user_name">Name Surname</p> 
+                    </div>
+
+                    <!-- active users box -->
+                    <div class="active-users-box">
+                        <p><span>Online Users</span></p>
+                        <div class="active-users-body">
+                            <div>
+                                <div title="username Name" class="active-users-avatars"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="active-users-status"><div style="background: #62bf6e"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--------- recent chats box --------->
+                    <div class="recent-chats-box">
+                        <div class="recent-chats-header">
+                            <div class="recent-chats-topic">Recent Chats</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="recent-chats-messages">
+                            <div class="recent-chat">
+                                <div class="recent-chat-avatar">
+                                    <span><img width="50" alt="avatar" src="img/avatar.jpg"/></span>
+                                </div>
+                                <div class="recent-chat-status"><div style="background: #62bf6e"></div></div>
+                                <div class="recent-chat-content">
+                                    <p><span>Name</span> <span>@sername_01</span></p>
+                                    <p><span>Online</span></p>
+                                </div>
+                                <span><i class="flaticon-user77"></i></span>
+                            </div>
+                            <div class="recent-chat">
+                                <div class="recent-chat-avatar">
+                                    <span><img width="50" alt="avatar" src="img/avatar.jpg"/></span>
+                                </div>
+                                <div class="recent-chat-status"><div style="background: #e28282"></div></div>
+                                <div class="recent-chat-content">
+                                    <p><span>Name</span> <span>@username</span></p>
+                                    <p><span>Last seen 2 min ago</span></p>
+                                </div>
+                                <span><i class="flaticon-building8"></i></span>
+                            </div>
+                            <div class="recent-chat">
+                                <div class="recent-chat-avatar">
+                                    <span><img width="50" alt="avatar" src="img/avatar.jpg"/></span>
+                                </div>
+                                <div class="recent-chat-status"><div style="background: #62bf6e"></div></div>
+                                <div class="recent-chat-content">
+                                    <p><span>Name</span> <span>@sername_01</span></p>
+                                    <p><span>Online</span></p>
+                                </div>
+                                <span><i class="flaticon-user77"></i></span>
+                            </div>
+                            <div class="recent-chat">
+                                <div class="recent-chat-avatar">
+                                    <span><img width="50" alt="avatar" src="img/avatar.jpg"/></span>
+                                </div>
+                                <div class="recent-chat-status"><div style="background: #62bf6e"></div></div>
+                                <div class="recent-chat-content">
+                                    <p><span>Name</span> <span>@sername_01</span></p>
+                                    <p><span>Online</span></p>
+                                </div>
+                                <span><i class="flaticon-user77"></i></span>
+                            </div>
+                            <div class="recent-chat">
+                                <div class="recent-chat-avatar">
+                                    <span><img width="50" alt="avatar" src="img/avatar.jpg"/></span>
+                                </div>
+                                <div class="recent-chat-status"><div style="background: #62bf6e"></div></div>
+                                <div class="recent-chat-content">
+                                    <p><span>Thiba Mahlezana</span> <span>@thiba_mahlezana</span></p>
+                                    <p><span>Online</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span6">
+                    <div class="title-bar" data-step="3" data-position="bottom" data-intro="This is where you will see where you are or which page you are in currently.">
+                        <div class="title-bar-icon">
+                            <i class="flaticon-speech59"></i>
+                        </div>
+                        <div class="title-bar-heading"><p>Chats</p></div>
+                        <div class="title-bar-desc">
+                           <strong> Name, </strong> views trending chats
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+
+                    <div class="public-chat-title-box">
+                        <a href="#"><img alt="avatar" src="img/avatar.jpg"/>@username</a>
+                        <a href="#"><img alt="avatar" src="img/avatar.jpg"/>@username</a>
+                        <a href="#"><img alt="avatar" src="img/avatar.jpg"/>@username</a>
+                        <a href="#"><i class="flaticon-group41"></i> 10 215</a>
+                        <a href="#" class="pull-right"><i class="flaticon-speech59"></i> 10 215</a>
+                    </div>
+
+                    <!------- topic chat title ------->
+                    <div class="topic-chat-title">
+                        <a><i class="flaticon-comments16"></i></a>
+                        <a>Has anybody seen the new Jordan, wow #ncaaa</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- custom chat title ------->
+                    <div class="custom-chat-title">
+                        <a><i class="flaticon-font2"></i></a>
+                        <a>This is a subject</a>
+                        <a>And this is the content of the post</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                    </div>
+
+                    <!------- image chat title ------->
+                    <div class="image-chat-title">
+                        <a><i class="flaticon-picture13"></i></a>
+                        <a>Me myself and I #awthand_yin</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!-------- video chat title-------->
+                    <div class="video-chat-title">
+                        <a><i class="flaticon-video91"></i></a>
+                        <a>Me myself and I nive video #awthand_yin</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- link chat title ------->
+                    <div class="link-chat-title">
+                        <a><i class="flaticon-link15"></i></a>
+                        <a>My personal site</a>
+                        <a href="http://asa.com">http://asa.com</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- thought chat title ------->
+                    <div class="thought-chat-title">
+                        <a><i class="flaticon-light45"></i></a>
+                        <a>I am thoughtless #Stressed</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- quote chat title ------>
+                    <div class="quote-chat-title">
+                        <a><i class="flaticon-quote2"></i></a>
+                        <a>"It always seems imposible until its..."</a>
+                        <a>Nelson Mandela</a>
+                        <a><i class="flaticon-group41"></i> 10 215
+                            <i class="flaticon-speech59"></i> 10 215
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="alert alert-danger chat-compose-alert"><i class="flaticon-warning18"></i> please don't</div>
+
+                    <div class="chat-box">
+                        <!-- chat messages -->
+                        <div class="chat-box-title">
+                            <div>
+                                <div class="chat-box-title-avatar"><img alt="avatar" src="img/avatar.jpg"/></div> 
+                                <span>@thiba_mahlezana</span>
+                                <div><i class="flaticon-building8"></i></div>
+                            </div>
+                            <div>
+                                <div class="chat-box-title-avatar"><img alt="avatar" src="img/avatar.jpg"/></div> 
+                                <span>@thiba_mahlezana</span>
+                                <div><i class="flaticon-user77"></i></div>
+                            </div>
+                            <span><i class="flaticon-comment32"></i> 36K</span>
+                        </div>
+                        <div class="chat-box-body">
+                            <div class="chat-box-message">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <span>@thiba_mahlezana</span>
+                                    <span>This is an actual message. This is an actual message. This is an actual message.</span>
+                                    <span>5 Min Ago</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message-reply">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <div>@thiba_mahlezana</div>
+                                    <span>5 Min Ago</span>
+                                    <span>This is an actual message. Reply chat Reply chat message Reply chat message Reply chat message Reply chat message</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message-reply">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <div>@thiba_mahlezana</div>
+                                    <span>5 Min Ago</span>
+                                    <span>owkay friend we will you</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <span>@thiba_mahlezana</span>
+                                    <span>This is an actual message. This is an actual message. This is an actual message.</span>
+                                    <span>5 Min Ago</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message-reply">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <div>@thiba_mahlezana</div>
+                                    <span>5 Min Ago</span>
+                                    <span>This is an actual message. Reply chat Reply chat message Reply chat message Reply chat message Reply chat message</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message-reply">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <div>@thiba_mahlezana</div>
+                                    <span>5 Min Ago</span>
+                                    <span>owkay friend we will you</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <span>@thiba_mahlezana</span>
+                                    <span>This is an actual message.</span>
+                                    <span>5 Min Ago</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="chat-box-message">
+                                <div class="chat-box-message-avatar"><img width="50" alt="avatar" src="img/avatar.jpg"/></div>
+                                <div class="chat-box-message-body">
+                                    <span>@thiba_mahlezana</span>
+                                    <span>This is an actual message.</span>
+                                    <span>5 Min Ago</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="chat-box-reply">
+                            <textarea rows="1" placeholder="reply..."></textarea>
+                            <button class="btn">send</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <!------- active chats ------->
+                    <p class="active-chats-heading"> Active Chats</p>
+
+                    <div data-step="6" data-position="left" data-intro="This is a list of trending chats by people or companies you follow.">
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom active chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image active chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- video active chat ------->
+                        <div class="video-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- link active chat ------->
+                        <div class="link-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a href="http://asa.com">http://asa.com</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- thought active chat ------->
+                        <div class="thought-active-chat">
+                            <a><i class="flaticon-light45"></i></a>
+                            <a>About the my future.</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- quote active chat ------->
+                        <div class="quote-active-chat">
+                            <a><i class="flaticon-quote2"></i></a>
+                            <a>"Focus on the good"...</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- popular chats ------->
+                    <p class="active-chats-heading"> Popular Chats</p>
+
+                    <div data-step="7" data-position="left" data-intro="This is a list of trending chats by everyone or every company based on your location.">
+                        <!------- topic popular chat-->
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom popular chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image popular chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- block user ------->
+                    <div class="block-user-bar">
+                        <a data-toggle="modal" href="#block-user-modal" role="button"><i class="flaticon-remove11"></i> block</a>
+                        <a href="#"><i class="flaticon-search19"></i> search</a>
+                        <a href="#"><i class="flaticon-bull1"></i> report</a>
+                    </div>
+
+                    <!------- block user modal ------->
+                    <div class="modal hide fade" id="block-user-modal" role="dialog">
+                        <div class="modal-dialog"></div>
+                        there is nothing
+                    </div>
+
+
+                    <!------- footer ------->
+                    <div class="mini-footer">
+                        <a href="help.php"> help</a>
+                        <a href="terms.php"> terms and conditions</a>
+                        <a href="privacy.php"> privacy</a>
+                        <a href="disclaimer.php"> disclaimer</a>
+                        <a href="ads.php"> ads</a>
+                        <div class="divider"></div>
+                        <p><strong> aypage</strong> is a product of<a href="http://www.ayttiq.com"> ayttiq technologies</a></p>
+                        <p>&copy; 2016, All rights reserved. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!----- JavaScripts ----->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/module_chats.js"></script>
+    </body>
+</html>

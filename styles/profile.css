@@ -1,0 +1,727 @@
+/***************************************************************************************************************
+                                                PROFILE 
+  **************************************************************************************************************/
+
+/***************************************************************************************************************
+                                                ACCOUNT STATUS
+  **************************************************************************************************************/
+.account-status {
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    color: #808080;
+}
+.account-status:hover {
+    background: #F0E8E0;
+}
+.account-status > p {
+    margin: 0;
+}
+.account-status > p:nth-of-type(1){
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/***************************************************************************************************************
+                                                VERIFICATION iNTERFACE 
+  **************************************************************************************************************/
+.profile-verify-bar {
+    background: #fff;
+    color: #808080;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 15px;
+}
+.profile-verify-bar:hover {
+    background: #F0E8E0;
+}
+.profile-verify-bar > p {
+    margin: 3px;
+}
+.profile-verify-bar > p > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.profile-verify-bar > p > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+
+.profile-verify-save-bar {
+    background: #fff;
+    color: #808080;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+    display: none;
+}
+.profile-verify-save-bar > p {
+    margin: 3px;
+}
+.profile-verify-save-bar > p > input {
+    background: #F0E8E0;
+    border: none;
+    height: 40px;
+    width: 80%;
+    margin: 0;
+    font-weight: 500;
+    color: #808080;
+    font-size: large;
+    border-radius: 5px;
+}
+.profile-verify-save-bar > p > input:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.profile-verify-save-bar > p > .btn {
+    background: #7b94b2;
+    color: #fff;
+    height: 30px;
+    width: 16%;
+}
+
+
+.profile-verify-send-bar {
+    background: #fff;
+    color: #808080;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+    display: none;
+}
+.profile-verify-send-bar > p {
+    margin: 3px;
+}
+.profile-verify-send-bar > p > input {
+    background: #F0E8E0;
+    border: none;
+    height: 40px;
+    width: 80%;
+    margin: 0;
+    font-weight: 500;
+    color: #808080;
+    font-size: large;
+    border-radius: 5px;
+}
+.profile-verify-send-bar > p > input:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.profile-verify-send-bar > p > .btn {
+    background: #7b94b2;
+    color: #fff;
+    height: 30px;
+    width: 16%;
+}
+
+
+/***************************************************************************************************************
+                                                PROFILE VIEW INFORMATION BAR
+  **************************************************************************************************************/
+.profile-information-bar {
+    background: #fff;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+.profile-information-bar > p > i{
+    color: #fff;
+    background: #b99dc4;
+    border-radius: 50%;
+    padding: 2px;
+}
+.profile-information-bar:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+.profile-information-bar > p {
+    color: #808080;
+}
+.profile-information-bar > p:nth-of-type(1) {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-information-bar > p:nth-of-type(1) > .btn {
+    color: #fff;
+    font-size: 15px;
+    background: #7b94b2;
+    border-radius: 5px;
+    padding: 2px;
+}
+.profile-information-bar > p:nth-of-type(1) > .btn > i {
+    color: #fff;
+}
+.profile-information-bar > p:nth-of-type(1) > .btn:hover {
+    background: #829ddd;
+    border-radius: 5px;
+    text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+.profile-information-header-photo {
+    overflow: hidden;
+    float: left;
+}
+.profile-information-header-photo > input[type='file'] {
+    margin-left: 20px;
+}
+.profile-information-header-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-information-bar > p:nth-of-type(2) {
+    font-size: 25px;
+    font-weight: 500;
+    color: #7b94b2;
+}
+.profile-information-bar > p:nth-of-type(3), 
+.profile-information-bar > p:nth-of-type(4),
+.profile-information-bar > p:nth-of-type(5),
+.profile-information-bar > p:nth-of-type(6),
+.profile-information-bar > p:nth-of-type(7) {
+    margin: 2px 10px;
+    font-size: 15px;
+}
+.profile-information-bar > p:nth-of-type(3):hover, 
+.profile-information-bar > p:nth-of-type(4):hover,
+.profile-information-bar > p:nth-of-type(5):hover,
+.profile-information-bar > p:nth-of-type(6):hover,
+.profile-information-bar > p:nth-of-type(7):hover {
+    background: #fff;
+    border-radius: 5px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+/***************************************************************************************************************
+                                    PROFILE EDIT INFORMATION BAR - INDIVIDUAL
+  **************************************************************************************************************/
+.profile-information-bar-edit {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+}
+.profile-information-bar-edit-alert {
+    box-shadow: none;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+.profile-information-bar-edit-alert > i {
+    font-size: 25px;
+}
+.profile-information-bar-edit > form > p > i{
+    color: #fff;
+    background: #b99dc4;
+    border-radius: 50%;
+    padding: 2px;
+}
+.profile-information-bar-edit:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+.profile-information-bar-edit > form > p {
+    color: #808080;
+}
+.profile-information-bar-edit > form > p > input[type='text'] {
+    border-radius: 5px;
+    height: 40px;
+    margin: 0;
+    color: #808080;
+    font-size: 15px;
+    border: none;
+}
+.profile-information-bar-edit > form > p > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.profile-information-bar-edit > form > p > textarea {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+}
+.profile-information-bar-edit > form > p > textarea:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+
+.profile-information-bar-edit > form > p:nth-of-type(1) {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(1) > .btn {
+    color: #fff;
+    font-size: 15px;
+    background: #7b94b2;
+    border-radius: 5px;
+    padding: 2px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(1) > .btn > i {
+    color: #fff;
+}
+.profile-information-bar-edit > form > p:nth-of-type(1) > .btn:hover {
+    background: #829ddd;
+    border-radius: 5px;
+    text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+
+.profile-information-bar-edit > form > p:nth-of-type(1) {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(2) > input[type='text']{
+    width: 85%;
+}
+.profile-information-bar-edit > form > p:nth-of-type(3) > input[type='text']{
+    width: 84.9%;
+    margin-left: 3px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(4) > textarea{
+    width: 85%;
+    margin-left: 25px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(5) > input[type='text']{
+    width: 85%;
+    margin-left: 12px;
+}
+.profile-information-bar-edit > form > p:nth-of-type(6) > input[type='text']{
+    width: 84.5%;
+    margin-left: 8px;
+}
+
+
+/***************************************************************************************************************
+                                    PROFILE EDIT INFORMATION BAR - INDIVIDUAL
+  **************************************************************************************************************/
+.profile-information-bar-edit-company {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+.profile-information-bar-edit-company > form > p > i{
+    color: #fff;
+    background: #b99dc4;
+    border-radius: 50%;
+    padding: 2px;
+}
+.profile-information-bar-edit-company:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+.profile-information-bar-edit-company > form > p {
+    color: #808080;
+}
+.profile-information-bar-edit-company > form > p > input[type='text'] {
+    border-radius: 5px;
+    height: 40px;
+    margin: 0;
+    color: #808080;
+    font-size: 15px;
+    border: none;
+}
+.profile-information-bar-edit-company > form > p > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.profile-information-bar-edit-company > form > p > textarea {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+}
+.profile-information-bar-edit-company > form > p > textarea:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+
+.profile-information-bar-edit-company > form > p:nth-of-type(1) {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(1) > .btn {
+    color: #fff;
+    font-size: 15px;
+    background: #7b94b2;
+    border-radius: 5px;
+    padding: 2px;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(1) > .btn > i {
+    color: #fff;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(1) > .btn:hover {
+    background: #829ddd;
+    border-radius: 5px;
+    text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+
+.profile-information-bar-edit-company > form > p:nth-of-type(1) {
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(2) > input[type='text']{
+    width: 85%;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(3) > textarea{
+    width: 85%;
+    margin-left: 25px;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(4) > input[type='text']{
+    width: 85%;
+    margin-left: 12px;
+}
+.profile-information-bar-edit-company > form > p:nth-of-type(5) > input[type='text']{
+    width: 84.5%;
+    margin-left: 8px;
+}
+
+/***************************************************************************************************************
+                                    PROFILE STATUS
+  **************************************************************************************************************/
+.profile-status-box {
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 3px;
+}
+.profile-status-box:hover {
+    background: #F0E8E0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;            
+}
+.profile-status-box > p {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    color: #808080;
+    font-weight: 500;
+}
+.profile-status-box > p:hover {
+    background: #fff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;   
+    cursor: pointer;
+    border-radius: 5px;         
+}
+.profile-status-box > p > a {
+    font-size: 16px;
+    display: initial;
+}
+
+/***************************************************************************************************************
+                                    PROFILE FOLLOWING VIEW
+  **************************************************************************************************************/
+.profile-following-view-box {
+    display: none;
+    width: auto;
+    height: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 3px 0;
+}
+.profile-following-header {
+    color: #808080;
+    font-weight: 500;
+    font-size: 18px;
+}
+.profile-following-header > span > input[type='text'] {
+    background: #F0E8E0;
+    border: none;
+    height: 35px;
+    width: 75%;
+    margin: 0;
+    border-radius: 5px;
+    font-size: large;
+}
+.profile-following-header > span > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.profile-following-header > a:hover {
+    background: #808080;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;           
+}
+.profile-following-view-box > p > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-following-view-box > p {
+    color: #7b94b2;
+    font-size: 16px;
+    margin: 2px 0;
+    padding: 2px;
+    border-radius: 5px;
+}
+.profile-following-view-box > p > span {
+    color: #808080;
+    font-size: 20px;
+}
+.profile-following-view-box > p > a {
+    color: #808080;
+    font-weight: 500;
+    margin: 5px;
+    padding: 1px;
+}
+.profile-following-view-box > p > a:hover {
+    text-decoration: none;
+    background: #fff;
+    border-radius: 5px;
+}
+.profile-following-view-box > p > a > i {
+    background: #ea9f6c;
+    color: #fff;
+    font-size: 20px;
+    height: 1.4em;
+    width: 1.4em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-radius: 50%;
+}
+.profile-following-view-box > p:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;       
+}
+.profile-following-view-box > p > i {
+    color: #fff;
+    background: #b99dc4;
+    font-size: small;
+    height: 1.4em;
+    width: 1.4em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================================
+                                AVATAR PREVIEW AND UPLOAD 
+========================================================================================== */
+.avatar-view {
+  display: block;
+  margin: 5px;
+  height: 220px;
+  width: 220px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.avatar-view img {
+  width: 100%;
+}
+
+.avatar-body {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.avatar-body-1{
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+.avatar-body-2{
+    float: left;
+    width: 20%;
+}
+.avatar-body-3{
+    width: 100%;
+}
+
+.avatar-upload {
+  overflow: hidden;
+  padding: 0;
+}
+
+.avatar-upload label {
+  display: block;
+  float: left;
+  clear: left;
+  width: 100px;
+}
+
+.avatar-upload input {
+  display: block;
+  margin-left: 110px;
+}
+
+.avatar-alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar-wrapper {
+  height: 364px;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+  background-color: #fcfcfc;
+  overflow: hidden;
+}
+
+.avatar-wrapper img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.avatar-preview {
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.avatar-preview:hover {
+  border-color: #ccf;
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.avatar-preview img {
+  width: 100%;
+}
+
+.preview-lg {
+  height: 184px;
+  width: 184px;
+  margin-top: 15px;
+}
+
+.preview-md {
+  height: 100px;
+  width: 100px;
+}
+
+.preview-sm {
+  height: 50px;
+  width: 50px;
+}
+
+@media (min-width: 992px) {
+  .avatar-preview {
+    float: none;
+  }
+}
+
+.avatar-btns {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.avatar-btns .btn-group {
+  margin-right: 5px;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff url("../img/loading.gif") no-repeat center center;
+  opacity: .75;
+  filter: alpha(opacity=75);
+  z-index: 20140628;
+}
+.profile-verification-bar{
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}

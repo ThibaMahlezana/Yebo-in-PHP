@@ -1,0 +1,1079 @@
+/***************************************************************************************************************
+                                                BASIC STYLES 
+  **************************************************************************************************************/
+
+/***************************************************************************************************************
+                                            PAGE INFORMATION TOOL 
+  **************************************************************************************************************/
+
+.introjs-overlay {
+  position: absolute;
+  z-index: 999999;
+  background-color: #000;
+  opacity: 0;
+  background: -moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.4)),color-stop(100%,rgba(0,0,0,0.9)));
+  background: -webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#e6000000',GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.introjs-fixParent {
+  z-index: auto !important;
+  opacity: 1.0 !important;
+}
+
+.introjs-showElement,
+tr.introjs-showElement > td,
+tr.introjs-showElement > th {
+  z-index: 9999999 !important;
+}
+
+.introjs-relativePosition,
+tr.introjs-showElement > td,
+tr.introjs-showElement > th {
+  position: relative;
+}
+
+.introjs-helperLayer {
+  position: absolute;
+  z-index: 9999998;
+  background-color: #FFF;
+  background-color: rgba(255,255,255,.9);
+  border: 1px solid #777;
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: 4px;
+  box-shadow: 0 2px 15px rgba(0,0,0,.4);
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.introjs-helperNumberLayer {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  z-index: 9999999999 !important;
+  padding: 2px;
+  font-family: Arial, verdana, tahoma;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  background: #ff3019; /* Old browsers */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404)); /* Chrome,Safari4+ */
+  background:    -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* IE10+ */
+  background:      -o-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Opera 11.10+ */
+  background:         linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);  /* W3C */
+  width: 20px;
+  height:20px;
+  line-height: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000); /* IE10 text shadows */
+  box-shadow: 0 2px 5px rgba(0,0,0,.4);
+}
+
+.introjs-arrow {
+  border: 5px solid white;
+  content:'';
+  position: absolute;
+}
+.introjs-arrow.top {
+  top: -10px;
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-bottom-color:white;
+  border-left-color:transparent;
+}
+.introjs-arrow.top-right {
+  top: -10px;
+  right: 10px;
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-bottom-color:white;
+  border-left-color:transparent;
+}
+.introjs-arrow.top-middle {
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-bottom-color:white;
+  border-left-color:transparent;
+}
+.introjs-arrow.right {
+  right: -10px;
+  top: 10px;
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:white;
+}
+.introjs-arrow.bottom {
+  bottom: -10px;
+  border-top-color:white;
+  border-right-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+}
+.introjs-arrow.left {
+  left: -10px;
+  top: 10px;
+  border-top-color:transparent;
+  border-right-color:white;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+}
+
+.introjs-tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0,0,0,.4);
+  -webkit-transition: opacity 0.1s ease-out;
+     -moz-transition: opacity 0.1s ease-out;
+      -ms-transition: opacity 0.1s ease-out;
+       -o-transition: opacity 0.1s ease-out;
+          transition: opacity 0.1s ease-out;
+}
+
+.introjs-tooltipbuttons {
+  text-align: right;
+}
+
+.introjs-button {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border: 1px solid #d4d4d4;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font: 11px/normal sans-serif;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: #ececec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+  background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+  background-image: -o-linear-gradient(#f4f4f4, #ececec);
+  background-image: linear-gradient(#f4f4f4, #ececec);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+}
+
+.introjs-button:hover {
+  border-color: #bcbcbc;
+  text-decoration: none;
+  box-shadow: 0px 1px 1px #e3e3e3;
+}
+
+.introjs-button:focus,
+.introjs-button:active {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ececec), to(#f4f4f4));
+  background-image: -moz-linear-gradient(#ececec, #f4f4f4);
+  background-image: -o-linear-gradient(#ececec, #f4f4f4);
+  background-image: linear-gradient(#ececec, #f4f4f4);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.introjs-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.introjs-skipbutton {
+  margin-right: 5px;
+  color: #7a7a7a;
+}
+
+.introjs-prevbutton {
+  -webkit-border-radius: 0.2em 0 0 0.2em;
+  -moz-border-radius: 0.2em 0 0 0.2em;
+  border-radius: 0.2em 0 0 0.2em;
+  border-right: none;
+}
+
+.introjs-nextbutton {
+  -webkit-border-radius: 0 0.2em 0.2em 0;
+  -moz-border-radius: 0 0.2em 0.2em 0;
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+.introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus {
+  color: #9a9a9a;
+  border-color: #d4d4d4;
+  box-shadow: none;
+  cursor: default;
+  background-color: #f4f4f4;
+  background-image: none;
+  text-decoration: none;
+}
+
+.introjs-bullets {
+  text-align: center;
+}
+.introjs-bullets ul {
+  clear: both;
+  margin: 15px auto 0;
+  padding: 0;
+  display: inline-block;
+}
+.introjs-bullets ul li {
+  list-style: none;
+  float: left;
+  margin: 0 2px;
+}
+.introjs-bullets ul li a {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  text-decoration: none;
+}
+.introjs-bullets ul li a:hover {
+  background: #999;
+}
+.introjs-bullets ul li a.active {
+  background: #999;
+}
+.introjsFloatingElement {
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  top: 50%;
+}
+
+/***************************************************************************************************************
+                                                NAVIGATION BAR 
+  **************************************************************************************************************/
+.navbar-box {
+    width: 100%;
+    background: #FFF;
+    height: 30px;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 2px 40px;
+    box-shadow: 0 0 1px 0 #808080;
+}
+.navbar-sec-1 {
+    width: 18%;
+    display: inline-block;
+}
+.navbar-sec-2 {
+    width: 50%;
+    display: block;
+    display: inline-block;
+}
+.navbar-sec-3 {
+    width: 30%;
+    display: inline-block;
+}
+.navbar-sec-2 > input[type="text"] {
+    height: 20px;
+    width: 50%;
+    border-radius: 5px;
+    margin: -3px 10px 0 0;
+    color: #808080;
+    background: #F0E8E0;
+    border: none; 
+    font-weight: 500;
+    font-size: large;   
+}
+.navbar-sec-1 > a {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    color: #808080;
+    font-weight: 500;
+    padding: 0;
+    position: relative;
+}
+.navbar-sec-1 > a:hover {
+    background: #f4f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #7b94b2;
+}
+.navbar-sec-1 > a::after {
+	position: absolute;
+	top: 100%;
+    left: 0;
+	width: 100%;
+	height: 1px;
+	background: #7b94b2;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.navbar-sec-1 > a:hover::after,
+.navbar-sec-1 > a:hover:after {
+	height: 5px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.navbar-sec-2 > input[type="text"]:focus {
+    box-shadow: none;
+    outline : 1px auto #829ddd;    
+}
+.navbar-sec-3 > a {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    color: #808080;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-sec-3 > a:hover {
+    background: #f4f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #7b94b2;
+}
+.navbar-sec-3 > a::after {
+	position: absolute;
+	top: 100%;
+    left: 0;
+	width: 100%;
+	height: 1px;
+	background: #7b94b2;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.navbar-sec-3 > a:hover::after,
+.navbar-sec-3 > a:hover:after {
+	height: 5px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.navbar-sec-3 > div {
+    border: 1px #808080 solid;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    transform: translate(-45%, 1%);
+}
+.navbar-sec-3 > div:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar-sec-3 > div > a {
+    text-decoration: none;
+}
+.messages-badge {
+    display: inline-block;
+}
+.notifications-badge {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.messages-badge > a:hover, .notifications-badge > a:hover {
+    text-decoration: none;
+    background: #F0E8E0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 0 4px 0;
+}
+
+.messages-badge > a > i, .notifications-badge > a > i {
+    font-size: 20px;
+}
+
+.messages-badge > a > span, .notifications-badge > a > span {
+    background: #f00;
+    border-radius: 50%;
+    padding: 2px;
+    color: #FFF;
+    font-size: x-small;
+    margin: 0 -8px 0 0;
+}
+.messages-badge > ul.dropdown-menu, .notifications-badge > ul.dropdown-menu {
+    padding: 2px;
+}
+
+.messages-badge > ul.dropdown-menu > .divider, .notifications-badge > ul.dropdown-menu > .divider {
+    margin: 0;
+}
+
+.messages-badge > ul.dropdown-menu {
+    width: 300px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 8px;
+}
+.notifications-badge > ul.dropdown-menu {
+    width: 320px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 8px;    
+}
+.notifications-badge > ul.dropdown-menu > li > a {
+    padding: 2px;
+    color: #808080;
+}
+.notifications-badge > ul.dropdown-menu > li > a > span.notifications-dropdown-content {
+    overflow: hidden;
+}
+.notifications-badge > ul.dropdown-menu > li > a > span.notifications-dropdown-time {
+    color: #c0392b;
+    font-size: small;
+}
+.messages-badge > ul.dropdown-menu > li > a {
+    padding: 2px;
+    color: #808080;
+}
+
+.messages-badge > ul.dropdown-menu > li > a:hover, .notifications-badge > ul.dropdown-menu > li > a:hover {
+    background: #F0E8E0;
+    border-radius: 5px;
+}
+
+.messages-badge > ul.dropdown-menu > li > a > div.messages-dropdown-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+}
+.messages-badge > ul.dropdown-menu > li > a > div.messages-dropdown-username {
+    font-weight: 500;
+    font-size: 15px;
+    color: #7b94b2;
+    line-height: 1.2em;
+}
+.messages-badge > ul.dropdown-menu > li > a > div.messages-dropdown-username > span {
+    color: #c0392b;
+    font-size: small;
+}
+.messages-badge > ul.dropdown-menu > li > a > div.messages-dropdown-content {
+    overflow: hidden;
+    color: #808080;
+}
+.messages-badge > ul.dropdown-menu > li > a > div > img {
+    width: 40px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+/***************************************************************************************************************
+                                                CURRENT USER BAR 
+  **************************************************************************************************************/
+.current_user_box {
+    background: #FFF;
+    border-radius: 10px;
+    width: auto;
+    height: 85px;
+    margin: 5px 0;
+    padding: 3px;
+}
+.current_user_box:hover {
+    background: #F0E8E0;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;    
+}
+.current_user_photo {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFF;
+}
+.current_user_photo:hover{
+    border: 2px solid #FFF;
+}
+.current_user_photo img {
+    width: 60px;
+}
+.current_user_type {
+    background: #FFF;
+    position: absolute;
+    transform: translate(210%, -100%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.current_user_type i {
+    position: absolute;
+    font-size: 12px;
+    margin-top: -3px;
+    margin-left: 2px;
+}
+.current_user_type a {
+}
+.current_user_type:hover, i:hover{
+    text-decoration: none;
+    color: #808080;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;	
+}
+.current_user_body {
+    float: right;
+    height: 60px;
+    width: 75%;
+    text-align: center;
+}
+p.current_user_username {
+    margin: 0;
+    font-size: large;
+    color: #7b94b2;
+    word-wrap: break-word;
+}
+.current_user_username > a {
+    color: #7b94b2;
+}
+.current_user_description {
+    line-height: 1em;
+    color: #808080;
+}
+p.current_user_name {
+    font-size: large;
+    color: #808080;
+    font-weight: 500;
+}
+
+/***************************************************************************************************************
+                                                MENU NAVBAR 
+  **************************************************************************************************************/
+.menu-navbar{
+    background:#fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu-navbar p:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background: #afadad;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;	
+}
+.menu-navbar a:hover{
+    text-decoration: none;
+}
+.menu-navbar a,i{
+    color: #7b94b2;
+    margin: 2px;
+}
+.menu-navbar > .menu-navbar-item i {
+    background: #7b94b2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    color: #FFF;
+    font-size: 16px;
+}
+.menu-navbar > p.menu-navbar-item{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 2em;
+}
+.menu-navbar > p.menu-navbar-item > a.menu-bar-badge{
+    margin-left: 25px;
+    border-radius: 5px;
+    color: #808080;
+}
+.menu-navbar > p.menu-navbar-item > a.menu-bar-badge:hover{
+    background: #FFF;
+    color: #808080;
+    text-decoration: none;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;	    
+}
+.menu-navbar > .divider{
+    margin: 2px;
+}
+
+/***************************************************************************************************************
+                                                TITLE BAR 
+  **************************************************************************************************************/
+.title-bar{
+    background: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    height: 40px;
+    width :auto;
+    padding: 5px;
+    line-height: 2.5em;
+}
+.title-bar i{
+    color: #FFF;
+    font-size :xx-large;
+    border-radius: 50%;
+    background: #7b94b2;
+}
+.title-bar-icon{
+    float: left;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 35px;
+}
+.title-bar-heading{
+    float: left;
+    margin-top: 6px;
+    line-height: 0.2em;
+    width: 350px;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 600;
+}
+.title-bar-desc{
+    float: left;
+    bottom: 0;
+    left: 10px;
+    line-height:0.2em;
+    color:#808080;
+    width: auto;
+    margin-top: 8px;
+}
+.title-bar-conn{
+    float: right;
+    top: 0;
+    font-size: small;
+    color:#4cff00;
+}
+title-bar-conn i{
+    font-size: small;
+}
+.page-title{
+    color:#808080;
+}
+
+/***************************************************************************************************************
+                                            BROWSER COMPITABILITY BAR 
+  **************************************************************************************************************/
+
+.browser-compitability-bar{
+    padding: 5px;
+    text-align: center;
+    background: #FFF;
+    border-radius: 10px;
+    margin: 5px 0;
+    line-height: 1em;
+}
+.browser-item{
+    width: fit-content;
+    margin: 2px 5px;;
+}
+.browser-item img{
+    width: 45px;
+}
+.browser-comp-bar-header{
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+}
+.browser-compitability-bar a{
+    color: #808080;
+}
+.browser-compitability-bar:hover{
+    background: #F0E8E0;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;	
+}
+.browser-compitability-bar a:hover{
+    text-decoration: none;
+}
+
+/***************************************************************************************************************
+                                                ACTIVE CHATS
+  **************************************************************************************************************/
+.active-chats-heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #808080;
+}
+.topic-active-chat:hover,
+.custom-active-chat:hover,
+.image-active-chat:hover,
+.video-active-chat:hover,
+.link-active-chat:hover,
+.thought-active-chat:hover,
+.quote-active-chat:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+.topic-active-chat > a:nth-of-type(3):hover,
+.custom-active-chat > a:nth-of-type(3):hover,
+.image-active-chat > a:nth-of-type(3):hover,
+.video-active-chat > a:nth-of-type(3):hover,
+.link-active-chat > a:nth-of-type(3):hover,
+.thought-active-chat > a:nth-of-type(3):hover,
+.quote-active-chat > a:nth-of-type(3):hover {
+    opacity: 0.5;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+/***************************************************************************************************************
+                                                TOPIC ACTIVE CHAT
+  **************************************************************************************************************/
+.topic-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.topic-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.topic-active-chat > a:hover {
+    text-decoration: none;
+}
+.topic-active-chat > a:nth-of-type(3), .topic-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.topic-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+/***************************************************************************************************************
+                                                CUSTOM ACTIVE CHAT
+  **************************************************************************************************************/
+.custom-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.custom-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.custom-active-chat > a:hover {
+    text-decoration: none;
+}
+.custom-active-chat > a:nth-of-type(3), .custom-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.custom-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                IMAGE ACTIVE CHAT
+  **************************************************************************************************************/
+.image-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.image-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.image-active-chat > a:hover {
+    text-decoration: none;
+}
+.image-active-chat > a:nth-of-type(3), .image-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.image-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                VIDEO ACTIVE CHAT
+  **************************************************************************************************************/
+.video-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.video-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.video-active-chat > a:hover {
+    text-decoration: none;
+}
+.video-active-chat > a:nth-of-type(3), .video-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.video-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                LINK ACTIVE CHAT
+  **************************************************************************************************************/
+.link-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.link-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.link-active-chat > a:hover {
+    text-decoration: none;
+}
+.link-active-chat > a:nth-of-type(3), .link-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.link-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                THOUGHT ACTIVE CHAT
+  **************************************************************************************************************/
+.thought-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.thought-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.thought-active-chat > a:hover {
+    text-decoration: none;
+}
+.thought-active-chat > a:nth-of-type(3), .thought-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.thought-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                THOUGHT ACTIVE CHAT
+  **************************************************************************************************************/
+.quote-active-chat {
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.quote-active-chat > a {
+    margin: 0 2px;
+    color: #808080;
+}
+.quote-active-chat > a:hover {
+    text-decoration: none;
+}
+.quote-active-chat > a:nth-of-type(3), .quote-active-chat > a:nth-of-type(4) {
+    font-weight: 500;
+    float: right;
+}
+.quote-active-chat > a > i {
+    border-radius: 50%;
+    background: #ea9f6c;
+    color: #fff;
+    padding: 3px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+/***************************************************************************************************************
+                                                PAGE FOOTER
+  **************************************************************************************************************/
+
+.mini-footer{
+    width: auto;
+    height: auto;
+    padding: 7px;
+    margin-top: 25px;
+    color: #808080;
+}
+.mini-footer > a, .mini-footer > p > a{
+    margin: 5px;
+    color: #7b94b2;
+}
+.mini-footer > a:hover, .mini-footer > p > a:hover {
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
+    background: #808080;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.mini-footer > p:nth-of-type(2) {
+    line-height: 0.1em;
+}
+.mini-footer > .divider {
+    margin: 2px;
+}
+
+/***************************************************************************************************************
+                                                BLOCK USER BAR
+  **************************************************************************************************************/
+.block-user-bar {
+    background: #FFF;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 3px;
+    width: auto;
+    height: 25px;
+    font-size: 18px;
+}
+.block-user-bar > a {
+    margin: 0 10px;
+    color: #808080;
+}
+.block-user-bar > a:hover {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #7b94b2;
+    background: #F0E8E0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.block-user-bar > a > i {
+    color: #FFF;
+    background: #ceb0b0;
+    border-radius: 50%;
+}
+.block-user-bar > a > i:hover {
+    background: #7b94b2;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}

@@ -1,0 +1,1360 @@
+/***************************************************************************************************************
+                                                TIMELINE 
+  **************************************************************************************************************/
+
+/***************************************************************************************************************
+                                                NO POSTS WARNING BAR
+  **************************************************************************************************************/
+.no-post-warning {
+    background: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 5px 0;
+    color: #808080;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/***************************************************************************************************************
+                                                CREATE POST BAR
+  **************************************************************************************************************/
+.create-post-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    height: 52px;
+}
+.create-post-box > .create-post-item {
+    height: 27px;
+    width: auto;
+    margin: 8px 13px;
+    text-align: center;
+}
+.create-post-box > a.create-post-item:hover {
+    text-decoration: none;
+}
+.create-post-icon {}
+.create-post-box > .create-post-item > .create-post-name {
+    line-height: 1.1em;
+    color: #808080;
+    font-weight: 500;
+}
+.create-post-box a {
+    display: inline-block;
+}
+.create-post-box > a.create-post-item i {
+    background: #ea9f6c;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 26px;   
+    color: #fff;
+    padding:2px; 
+}
+.create-post-box > a.create-post-item i:hover {
+    background: #eac5ac;
+}
+
+/***************************************************************************************************************
+                                                POST VALIDATION MESSAGE
+  **************************************************************************************************************/
+.post-validation-message {
+    font-size: 18px;
+    line-height: 1em;
+}
+
+
+/***************************************************************************************************************
+                                                CREATE TOPIC POST FORM
+  **************************************************************************************************************/
+.topic-post-form-box {
+    display: none;
+    background: #fff;
+    width: auto;
+    height: 108px;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 3px;
+}
+.topic-post-form-box > form > .topic-post-form-header a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+}
+.topic-post-form-box > form > .topic-post-form-header a:hover {
+    text-decoration: none;
+}
+.topic-post-form-box > form > .topic-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.topic-post-form-box > form > .topic-post-form-content textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #F0E8E0;
+    border: none;
+}
+.topic-post-form-box > form > .topic-post-form-content textarea:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.topic-post-form-box > form > .topic-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.topic-post-form-box > form > .topic-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.topic-post-form-box > form > .topic-post-form-content {
+    width: 75%;
+    float: left;
+}
+.topic-post-form-box > form > .topic-post-form-submit {
+    width: 20%;
+    float: right;
+}
+.topic-post-form-box > form > .topic-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+    width: 100%;
+}
+
+
+/***************************************************************************************************************
+                                                CREATE CUSTOM POST FORM
+  **************************************************************************************************************/
+.custom-post-form-box {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    width: auto;
+    height: 135px;
+    margin: 5px 0;
+    padding: 3px;
+}
+.custom-post-form-box > form > .custom-post-form-header a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;    
+}
+.custom-post-form-box > form > .custom-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.custom-post-form-box > form > .custom-post-form-content > input[type='text'] {
+    width: 100%;
+    border-radius: 5px;
+    background: #F0E8E0;
+    font-size: 18px;
+    border: none;
+}
+.custom-post-form-box > form > .custom-post-form-content > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.custom-post-form-box > form > .custom-post-form-content {
+    float: left;
+    width: 75%;
+}
+.custom-post-form-box > form > .custom-post-form-content textarea {
+    width: 100%;    
+    border-radius: 5px;
+    background: #F0E8E0;
+    font-size: 15px;
+    border: none;
+}
+.custom-post-form-box > form > .custom-post-form-content textarea:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.custom-post-form-box > form > .custom-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.custom-post-form-box > form > .custom-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.custom-post-form-box > form > .custom-post-form-submit {
+    float: right;
+    width: 20%;
+}
+.custom-post-form-box > form > .custom-post-form-submit > .btn {
+    color: #fff;
+    background: #829ddd;
+    width: 100%;
+}
+
+/***************************************************************************************************************
+                                                CREATE IMAGE POST FORM
+  **************************************************************************************************************/
+.image-post-form-box {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    height: 130px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.image-post-form-box > form > .image-post-form-header a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #808080;    
+}
+.image-post-form-box > form > .image-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px;
+}
+.image-post-form-box > form > .image-post-form-content {
+    float: left;
+    width: 80%;
+}
+.image-post-form-box > form > .image-post-form-content > .image-post-form-content-view {
+    float: left;
+    background: #F0E8E0;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    border: 2px solid #b5b5b5;
+}
+.image-post-form-box > form > .image-post-form-content > p input[type="text"] {
+    width: 67%;
+    border-radius: 5px;
+    background: #F0E8E0;
+    border: none;
+}
+.image-post-form-box > form > .image-post-form-content > p input[type="text"]:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.image-post-form-box > form > .image-post-form-submit {
+    float: right;
+    width: 18%;
+}
+.image-post-form-box > form > .image-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.image-post-form-box > form > .image-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.image-post-form-box > form > .image-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+    width: 100%;
+}
+
+/***************************************************************************************************************
+                                                CREATE VIDEO POST FORM
+  **************************************************************************************************************/
+.video-post-form-box {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    height: 130px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.video-post-form-box > form > .video-post-form-header a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #808080;    
+}
+.video-post-form-box > form > .video-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px;
+}
+.video-post-form-box > form > .video-post-form-content {
+    float: left;
+    width: 80%;
+}
+.video-post-form-box > form > .video-post-form-content > .video-post-form-content-view {
+    float: left;
+    background: #F0E8E0;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    border: 2px solid #b5b5b5;
+}
+.video-post-form-box > form > .video-post-form-content > p input[type="text"] {
+    width: 67%;
+    border-radius: 5px;
+    background: #F0E8E0;
+    border: none;
+}
+.video-post-form-box > form > .video-post-form-content > p input[type="text"]:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.video-post-form-box > form > .video-post-form-submit {
+    float: right;
+    width: 18%;
+}
+.video-post-form-box > form > .video-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.video-post-form-box > form > .video-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.video-post-form-box > form > .video-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+    width: 100%;
+}
+
+
+/***************************************************************************************************************
+                                                CREATE LINK POST FORM
+  **************************************************************************************************************/
+.link-post-form-box {
+    display: none;
+    width: auto;
+    height: 110px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0;
+}
+.link-post-form-box > .link-post-form-header a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;    
+}
+.link-post-form-box > .link-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px;
+}
+
+.link-post-form-box > form > .link-post-form-content {
+    float: left;
+    width: 75%;
+}
+.link-post-form-box > form > .link-post-form-submit {
+    float: right;
+    width: 25%
+}
+.link-post-form-box > form > .link-post-form-content > input[type='text'] {
+    border-radius: 5px;
+    width: 95%;
+    background: #F0E8E0;
+    border: none;
+    color: #808080;
+    font-weight: 500;
+}
+.link-post-form-box > form > .link-post-form-content > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.link-post-form-box > form > .link-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.link-post-form-box > form > .link-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.link-post-form-box > form > .link-post-form-submit > button {
+    width: 100%;
+    margin-bottom: 0;
+}
+.link-post-form-box > form > .link-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+}
+.link-post-form-box > form > .link-post-form-submit > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+/***************************************************************************************************************
+                                                CREATE THOUGHT POST FORM
+  **************************************************************************************************************/
+.thought-post-form-box {
+    display: none;
+    width: auto;
+    height: 110px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0; 
+}
+.thought-post-form-box > .thought-post-form-header {}
+.thought-post-form-box > .thought-post-form-header a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;    
+}
+.thought-post-form-box > .thought-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px;
+}
+.thought-post-form-box > form > .thought-post-form-content {
+    float: left;
+    width: 75%;
+}
+.thought-post-form-box > form > .thought-post-form-submit {
+    float: right;
+    width: 25%;
+}
+.thought-post-form-box > form > .thought-post-form-content > input[type='text'] {
+    border-radius: 5px;
+    width: 95%;
+    height: 50px;
+    background: #F0E8E0;
+    border: none;
+    color: #808080;
+    font-weight: 500;
+    font-size: 22px;
+}
+.thought-post-form-box > form > .thought-post-form-content > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.thought-post-form-box > form > .thought-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.thought-post-form-box > form > .thought-post-form-submit > p > input[type="radio"]:not(old) {
+    width: 16px;
+    height: 16px;
+}
+.thought-post-form-box > form > .thought-post-form-submit > p {
+    line-height: 1em;
+    margin: 2px;
+    color: #808080;
+    font-weight: 500;
+}
+.thought-post-form-box > form > .thought-post-form-submit > button {
+    width: 100%;
+    margin-bottom: 0;
+}
+.thought-post-form-box > form > .thought-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+}
+.thought-post-form-box > form > .thought-post-form-submit > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+/***************************************************************************************************************
+                                                CREATE QUOTE POST FORM
+  **************************************************************************************************************/
+.quote-post-form-box {
+    display: none;
+    width: auto;
+    height: 110px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px 0; 
+}
+.quote-post-form-header {}
+.quote-post-form-box > form > .quote-post-form-header a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;    
+}
+.quote-post-form-box > form > .quote-post-form-header i {
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px;
+}
+.quote-post-form-box > form > .quote-post-form-content {
+    width: 75%;
+    float: left;
+}
+.quote-post-form-box > form > .quote-post-form-submit {
+    width: 25%;
+    float: right;
+}
+.quote-post-form-box > form > .quote-post-form-content input[type="text"] {
+    border-radius: 5px;
+    background: #F0E8E0;
+    width: 95%;
+    margin: 3px 0;
+    border: none;
+    color: #808080;
+    font-weight: 500;
+}
+.quote-post-form-box > form > .quote-post-form-content input[type="text"]:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+}
+.quote-post-form-box > form > .quote-post-form-submit > .btn {
+    background: #829ddd;
+    color: #fff;
+    width: 100%;
+}
+
+/***************************************************************************************************************
+                                                TOPIC POST
+  **************************************************************************************************************/
+.topic-post-box {
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+}
+.topic-post-box > .topic-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.topic-post-box > .topic-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.topic-post-box > .topic-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.topic-post-box > .topic-post-user img {
+    height: 60px;
+    width: 60px;
+}
+.topic-post-box > .topic-post-content {
+    float: right;
+    width: 85%;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+}
+.topic-post-box > .topic-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+.topic-post-box > .topic-post-content a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.topic-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.topic-post-box > .topic-post-content a i:hover {
+    background: #eac5ac;
+}
+.topic-post-box > .topic-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.topic-post-box > .topic-post-content > .divider {
+    margin: 3px 0;
+}
+
+
+/***************************************************************************************************************
+                                                CUSTOM POST
+  **************************************************************************************************************/
+.custom-post-box {
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+}
+.custom-post-username {}
+.custom-post-content {
+    float: right;
+    width: 85%;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+}
+.custom-post-content p {
+    line-height: 1em;
+}
+.custom-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.custom-post-box > .custom-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.custom-post-box > .custom-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.custom-post-box > .custom-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+.custom-post-box > .custom-post-content > p:nth-of-type(1) {
+    font-size: 15px;
+    font-weight: 500;
+}
+.custom-post-box > .custom-post-content > p {
+    line-height: 0.5em;
+    padding: 2px;
+}
+.custom-post-box > .custom-post-content > .divider {
+    margin: 3px 0;
+}
+.custom-post-box > .custom-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.custom-post-box > .custom-post-content a i:hover {
+    background: #eac5ac;
+}
+.custom-post-box > .custom-post-content a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.custom-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/***************************************************************************************************************
+                                                IMAGE POST
+  **************************************************************************************************************/
+.image-post-box {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+}
+.image-post-box > .image-post-username {}
+.image-post-box > .image-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image-post-box > .image-post-content {
+    float: left;
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+    margin-left: 15px;
+}
+.image-post-box > .image-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.image-post-box > .image-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.image-post-box > .image-post-content p:nth-of-type(1) img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+.image-post-box > .image-post-content > p {
+    line-height: 1em;
+    padding: 2px;
+}
+.image-post-box > .image-post-content > .divider {
+    margin: 3px 0;
+}
+.image-post-box > .image-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.image-post-box > .image-post-content a i:hover {
+    background: #eac5ac;
+}
+.image-post-box > .image-post-content a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.image-post-box > .image-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.image-post-box > .image-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+
+/***************************************************************************************************************
+                                                VIDEO POST
+  **************************************************************************************************************/
+.video-post-box {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+}
+.video-post-box > .video-post-username {}
+.video-post-box > .video-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.video-post-box > .video-post-content {
+    float: left;
+    width: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+    margin-left: 15px;
+}
+.video-post-box > .video-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.video-post-box > .video-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.video-post-box > .video-post-content p:nth-of-type(1) {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+.video-post-box > .video-post-content > p {
+    line-height: 1em;
+    padding: 2px;
+}
+.video-post-box > .video-post-content > .divider {
+    margin: 3px 0;
+}
+.video-post-box > .video-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.video-post-box > .video-post-content a i:hover {
+    background: #eac5ac;
+}
+.video-post-box > .video-post-content a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.video-post-box > .video-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.video-post-box > .video-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+
+/***************************************************************************************************************
+                                                LINK POST
+  **************************************************************************************************************/
+
+.link-post-box {
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+}
+.link-post-username {}
+.link-post-content {
+    float: right;
+    width: 85%;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+}
+.link-post-content p {
+    line-height: 1em;
+}
+.link-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.link-post-box > .link-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.link-post-box > .link-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.link-post-box > .link-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+.link-post-box > .link-post-content > p:nth-of-type(1) {
+    font-size: 15px;
+    font-weight: 500;
+}
+.link-post-box > .link-post-content > p {
+    line-height: 0.5em;
+    padding: 2px;
+}
+.link-post-box > .link-post-content > .divider {
+    margin: 3px 0;
+}
+.link-post-box > .link-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.link-post-box > .link-post-content a i:hover {
+    background: #eac5ac;
+}
+.link-post-box > .link-post-content > a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.link-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/***************************************************************************************************************
+                                                QUOTE POST
+  **************************************************************************************************************/
+.quote-post-box {
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+}
+.quote-post-username {}
+.quote-post-content {
+    float: right;
+    width: 85%;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+}
+.quote-post-content p {
+    line-height: 1em;
+}
+.quote-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.quote-post-box > .quote-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.quote-post-box > .quote-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.quote-post-box > .quote-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+.quote-post-box > .quote-post-content > p:nth-of-type(2) {
+    color: #808080;
+}
+.quote-post-box > .quote-post-content > p:nth-of-type(2) {
+    font-size: 15px;
+    font-weight: 500;
+}
+.quote-post-box > .quote-post-content > p {
+}
+.quote-post-box > .quote-post-content > .divider {
+    margin: 3px 0;
+}
+.quote-post-box > .quote-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.quote-post-box > .quote-post-content a i:hover {
+    background: #eac5ac;
+}
+.quote-post-box > .quote-post-content > a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+}
+.quote-post-content a:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/***************************************************************************************************************
+                                                THOUGHT POST
+  **************************************************************************************************************/
+.thought-post-box {
+    width: fit-content;
+    height: 100px;
+    margin: 5px 0;
+}
+.thought-post-box > .thought-post-username a {
+    color: #808080;
+    font-weight: 700;
+    font-size: 15px;
+}
+.thought-post-box > .thought-post-user {
+    float: left;
+    width: 10%;
+    height: fit-content;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.thought-post-box > .thought-post-content {
+    float: right;
+    width: fit-content;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 3px;
+    color: #696969;
+    margin-left: 15px;
+}
+.thought-post-box > .thought-post-content > p {
+    font-size: 22px;
+    color: #808080;
+}
+.thought-post-box > .thought-post-content > .divider {
+    margin: 3px 0;
+}
+.thought-post-box > .thought-post-content > a > i {
+    font-size: 20px;
+    background: #ea9f6c;
+    border-radius: 50%;
+    color: #fff;
+}
+.thought-post-box > .thought-post-content a i:hover {
+    background: #eac5ac;
+}
+.thought-post-box > .thought-post-content > a {
+    color: #808080;
+    font-weight: 500;
+    margin: 0 8px;
+    text-decoration: none;
+}
+.thought-post-box > .thought-post-username a:hover {
+    cursor: pointer;
+    color: #829ddd;
+    text-decoration: none;
+}
+.thought-post-box > .thought-post-content:hover {
+    background: #F0E8E0;
+    cursor: pointer;
+}
+.thought-post-box > div:nth-of-type(3){
+    float: left;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+}
+.thought-post-box > div:nth-of-type(4){
+    float: left;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.soc-feed{
+    padding:2px;
+    margin:5px 0;
+    width:auto;
+    height:auto;
+    position:static;
+}
+.soc-feed-path-one{
+    float:left;
+    position:relative;
+    top:0;
+    width:10%;
+}
+.soc-feed-path-two{
+    float:right;
+    position:static;
+    top:0;
+    width:90%;
+}
+.soc-feed-avatar{
+}
+.soc-feed-avatar img{
+    display:block;
+    width:48px;
+}
+.soc-feed-name{
+    color:#808080;
+}
+.soc-feed-time{
+    color:#808080;
+    font-size:x-small;
+    text-align:right;
+    margin-right:5%;
+}
+.soc-feed-verf{
+    background:#fff;
+    -moz-border-radius:30em;
+    -webkit-border-radius:30em;
+    border-radius:30em;
+    width:16px;
+    height:16px;
+    padding:4px;
+    margin:4px;
+    position:absolute;
+    top:70%;
+    left:50%;
+}
+.soc-feed-body{
+    background:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+}
+.soc-feed-extra{
+    background:#fff;
+    color:#808080;
+    padding:0 5px;
+    margin:0 5px;
+    text-align:center;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+.soc-feed-extra a :hover{
+    cursor:pointer;
+    background:#b5b5b5;
+    text-decoration:none;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:5px;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;	
+}
+
+/* TIMELINE LINK DESIGN */
+.timeline_link_divider{
+    border-bottom: 1px solid #eae7e7;
+}
+.timeline_link_grid{
+    width: 570px;
+    margin: 5px 0;
+}
+.timeline_link_header{
+    padding: 2px;
+}
+.timeline_link_name{
+    float: left;
+    width: 60%;
+}
+.timeline_link_description{
+    float: left;
+    width: 40%;
+}
+.timeline_link_avatar{
+    width: 60px;
+    float: left;
+    padding: 2px;
+    z-index: 1;
+    position: absolute;
+}
+.timeline_link_type{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    left: 40px;
+    top: -20px;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+}
+.timeline_link_body{
+    width: 480px;
+    float: right;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+.timeline_link_body:hover{
+    background: #F0E8E0;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.timeline_link_body_header{
+}
+.timeline_link_stats{
+    float: left;
+    padding: 0 5px;
+}
+.timeline_link_timePrivacy{
+    float: right;
+    text-align: right;
+    padding: 0 5px;
+}
+.timeline_link_time{
+    background: #eae7e7;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 5px;
+    color: #808080;
+    padding: 1px;
+    font-size: small;
+}
+.timeline_link_topic{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 200%;
+    color: #808080;
+    line-height: 1em;
+    width: auto;
+}
+.timeline_link_bodyPath{}
+.timeline_link_descPath{
+    width: auto;
+    padding: 5px;
+    font-size: large;
+}
+.timeline_link_tagsPath{
+    width: auto;
+    padding: 5px;
+    font-size: 15px;
+    color: #808080;
+}
+.timeline_link_tags{
+    background: #99a7f1;
+    width: fit-content;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.timeline_link_tags:hover{
+    text-decoration: none;
+    color: #808080;
+    background: #fff;
+    overflow: hidden;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.timeline_link_urlPath{
+    padding: 5px;
+    font-size: 15px;
+    color: #808080;
+    overflow: hidden;
+}
+.timeline_link_urlPath a{
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #eae7e7;
+    padding: 2px 5px;
+}
+.timeline_link_urlPath a:hover{
+    background: #fff;
+    text-decoration: none;
+}
+.timeline_link_socialPath{
+    padding: 5px;
+}
+.timeline_link_footer{
+    padding: 5px;
+    background: #eae7e7;
+    margin: -5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/* TIMELINE CHAT DESIGN */
+.timeline-chat-body{
+    width: 570px;
+    margin: 5px;
+}
+.timeline-chat-body-one{
+    float: left;
+    width: 60px;
+    padding: 5px;
+}
+.timeline-chat-body-two{
+    float: left;
+    width: 480px;
+}
+
+.timeline-chat-body-avatar{
+    float: left;
+    width: 60px;
+    z-index: 1;
+}
+.timeline_chat_type{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    left: 40px;
+    top: -20px;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+}
+
+.timeline-chat-body-main{
+    float: left;
+    width: fit-content;
+    border-radius: 1em;
+    padding: 5px;
+    background: #eac5ac;
+}
+.timeline-chat-body-main-name{
+    color: #829ddd;
+    font-weight: 600;
+    margin: 2px;
+    background: #F0E8E0;
+    border-radius: 5px;
+    padding: 0 2px;
+    margin-right: 5px;
+}
+.timeline-chat-body-main-time{
+    font-size: smaller;
+    color: rgb(222,60,80);
+    margin-top: -5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: 500;
+}
+.timeline-chat-body-main-text{
+    float: left;
+    font-size: large;
+}

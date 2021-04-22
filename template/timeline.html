@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title> aypage | timeline ...</title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="styles/metro-bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+        <link rel="stylesheet" type="text/css" href="styles/basic.css" />
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="styles/timeline.css" />
+
+    </head>
+    <body>
+        <!--- main navbar --->
+        <div class="navbar-box">
+            <div class="navbar-sec-1">
+                <a href="timeline.php"><i class="flaticon-list30"></i> Timeline</a>
+                <a href="chat.php"><i class="flaticon-speech59"></i> Chats</a>
+            </div>
+            <div class="navbar-sec-2">
+                <input type="text" placeholder="search..."/>
+                <div class="notifications-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>5</span>
+                        <i class="flaticon-bell13"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda, @ayttiq and @bra_d followed you</span>
+                                <span class="notifications-dropdown-time pull-right">1d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba, Your Account is still not activated</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Thiba check your privacy settings</span>
+                                <span class="notifications-dropdown-time pull-right">2d</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">Aypage is introducing new features next week</span>
+                                <span class="notifications-dropdown-time pull-right">1w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="notifications-dropdown-content">@Asanda shared a post with you</span>
+                                <span class="notifications-dropdown-time pull-right">2w</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="notifications.php">More...</a></li>
+                    </ul>
+                </div>
+                <div class="messages-badge dropdown">
+                    <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <span>25</span>
+                        <i class="flaticon-envelope4"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+                        <li><a><div class="messages-dropdown-avatar"><img alt="avatar" src="avatars/tiba-profile-pic.jpg"/></div> 
+                               <div class="messages-dropdown-username">@username<span class="pull-right">1d</span></div>
+                               <div class="messages-dropdown-content">This is an example of a message sent to a user.</div>
+                               <div class="clear"></div>
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li><a href="messages.php">More...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-sec-3">
+                <a href="settings.php"><i class="flaticon-cog2"></i> settings</a>
+                <a href="help.php"><i class="flaticon-question22"></i> help</a>
+                <a href="signed-out.php"><i class="flaticon-sign4"></i> sign out</a>
+                <div class="pull-right">
+                    <a class="intro-tool pull-right" href="javascript:void(0);" onclick="javascript:introJs().start();">
+                        <i class="flaticon-information34"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--- row --->
+            <div class="row">
+                <!--- navigation section --->
+                <div class="span3">
+                    <!--- current userbar --->
+                    <div class="current_user_box" data-step="1" data-intro="This is your basic profile information and a link to your full profile page.">
+                        <div class="current_user_photo">
+                            <img alt="avatar" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="current_user_body">
+                            <p class="current_user_username"><a href="profile.php"><strong>@username</strong></a></p> 
+                            <p class="current_user_description">short bio of the user</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="current_user_type">
+                            <a href="#"><i class="flaticon-user77"></i></a>
+                        </div>
+                        <div class="clear"></div>
+                        <p class="current_user_name">Name Surname</p> 
+                    </div>
+
+                    <!--- menu bar  --->
+                    <div class="menu-navbar" data-step="2" data-intro="This is your menu list, it helps you reach different categories of your links easier." data-position='right'>
+                        <p class="menu-navbar-item">
+                            <a href="people.php"><i class="flaticon-group41"></i> People </a> 
+                            <a class="menu-bar-badge"><strong> 20 </strong></a>
+                        </p>
+                        <p class="menu-navbar-item">
+                            <a href="companies.php"><i class="flaticon-building8"></i> Companies </a>
+                            <a class="menu-bar-badge"><strong> 20 </strong></a>
+                        </p>
+                        <p class="menu-navbar-item">
+                            <a href="posts.php">
+                                <i class="flaticon-speech59"></i> Posts 
+                                <a class="menu-bar-badge"><strong> 20 </strong></a>
+                            </a>
+                        </p>
+                        <p class="divider"></p>
+                        <p class="menu-navbar-item"><a href="search.php"><i class="flaticon-search19"></i> Search </a></p>
+                    </div>
+
+                </div>
+
+                <!--- content sestion --->
+                <div class="span6">
+                    <!---- title bar ----->
+                    <div class="title-bar" data-step="3" data-position="bottom" data-intro="This is where you will see where you are or which page you are in currently.">
+                        <div class="title-bar-icon">
+                            <i class="flaticon-comment32"></i>
+                        </div>
+                        <div class="title-bar-heading"><p>Timeline</p></div>
+                        <div class="title-bar-desc">
+                           <strong> Name, </strong> view live stream of feeds
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+
+                    <!---- Create post form ----->
+                    <div class="create-post-box">
+                        <a id="create_topic" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-comments16"></i></div>
+                            <div class="create-post-name">Topic</div>
+                        </a>
+                        <a id="create_custom" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-font2"></i></div>
+                            <div class="create-post-name">Custom</div>
+                        </a>
+                        <a id="create_image" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-picture13"></i></div>
+                            <div class="create-post-name">Image</div>
+                        </a>
+                        <a id="create_video" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-video91"></i></div>
+                            <div class="create-post-name">Video</div>
+                        </a>
+                        <a id="create_link" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-link15"></i></div>
+                            <div class="create-post-name">Link</div>
+                        </a>
+                        <a id="create_thought" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-light45"></i></div>
+                            <div class="create-post-name">Thought</div>
+                        </a>
+                        <a id="create_quote" href="#" class="create-post-item">
+                            <div class="create-post-icon"><i class="flaticon-quote2"></i></div>
+                            <div class="create-post-name">Quote</div>
+                        </a>
+                    </div>
+                    
+                    <!------- Validation Bar ------->
+                    <div class="alert alert-danger post-validation-message">
+                        <i class="flaticon-warning18"></i>alert message
+                    </div>
+                    <div class="alert alert-success post-validation-message">
+                        <i class="flaticon-check30"></i> alert message
+                    </div>
+                    <!----- Topic post form ----->
+                    <div class="topic-post-form-box">
+                        <form method="post" action="">
+                            <div class="topic-post-form-header">
+                                <a><i class="flaticon-comments16"></i> Chat Topic</a>
+                            </div>
+                            <div class="topic-post-form-content">
+                                <input name="post_type" value="topic" type="hidden"/>
+                                <textarea name="topic_content" cols="2" placeholder="write a chat topic..."></textarea>
+                            </div>
+                            <div class="topic-post-form-submit">
+                                <p><input class="radio-button" name="post_privacy" id="optionsRadios1" value="1" type="radio" required> public </p>
+                                <p><input class="radio-button" name="post_privacy" id="optionRadios2" value="2" type="radio" required> private </p>
+                                <button class="btn" type="submit"> post</button>
+                            </div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- Custom post form ------->
+                    <div class="custom-post-form-box">
+                        <form method="post" action="">
+                            <div class="custom-post-form-header">
+                                <a><i class="flaticon-font2"></i> Custom Post</a>
+                            </div>
+                            <div class="custom-post-form-content">
+                                <input name="post_type" value="custom" type="hidden"/>
+                                <input name="custom_subject" type="text" placeholder="subject..."/>
+                                <textarea name="custom_content" rows="2" placeholder="content..."></textarea>
+                            </div>
+                            <div class="custom-post-form-submit">
+                                <p><input class="radio-button" name="custom_privacy" id="optionsRadios1" value="1" type="radio" required> public </p>
+                                <p><input class="radio-button" name="custom_privacy" id="optionRadios2" value="2" type="radio" required> private </p>
+                                <button type="submit" class="btn"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                    <!------- Image post form ------->
+                    <div class="image-post-form-box">
+                        <form method="post" enctype="multipart/form-data" action="">
+                            <div class="image-post-form-header">
+                                <a><i class="flaticon-picture13"></i> Image</a>
+                            </div>
+                            <div class="image-post-form-content">
+                                <input name="post_type" value="image" type="hidden"/>
+                                <p class="image-post-form-content-view"> preview</p>
+                                <p><input name="image_caption" type="text" placeholder="write your caption..."/></p>
+                                <p><input name="image_file" type="file" /></p>
+                            </div>
+                            <div class="image-post-form-submit">
+                                <p><input class="radio-button" name="post_privacy" id="optionsRadios1" value="public" type="radio" required> public </p>
+                                <p><input class="radio-button" name="post_privacy" id="optionRadios2" value="private" type="radio" required> private </p>
+                                <button type="submit" class="btn"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                    <!------- Video post form ------->
+                    <div class="video-post-form-box">
+                        <form method="post" enctype="multipart/form-data" action="">
+                            <div class="video-post-form-header">
+                                <a><i class="flaticon-video91"></i> Video</a>
+                            </div>
+                            <div class="video-post-form-content">
+                                <input name="post_type" value="video" type="hidden"/>
+                                <p class="video-post-form-content-view"> preview</p>
+                                <p><input name="video_caption" type="text" placeholder="write your caption..."/></p>
+                                <p><input name="video_file" type="file" /></p>
+                            </div>
+                            <div class="video-post-form-submit">
+                                <p><input class="radio-button" name="post_privacy" id="optionsRadios1" value="public" type="radio"> public </p>
+                                <p><input class="radio-button" name="post_privacy" id="optionRadios2" value="private" type="radio"> private </p>
+                                <button type="submit" class="btn"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!------- Link post form ------->
+                    <div class="link-post-form-box">
+                        <div class="link-post-form-header">
+                            <a><i class="flaticon-link15"></i> Link</a>
+                        </div>
+                        <form method="post" action="">
+                            <div class="link-post-form-content">
+                                <input name="post_type" value="link" type="hidden"/>
+                                <input name="link_url" type="text" value="http://"/>
+                                <input name="link_caption" type="text" placeholder="caption..."/>
+                            </div>
+                            <div class="link-post-form-submit">
+                                <p><input class="radio-button" name="post_privacy" id="optionsRadios1" value="1" type="radio" > public </p>
+                                <p><input class="radio-button" name="post_privacy" id="optionRadios2" value="2" type="radio" > private </p>
+                                <button class="btn" type="submit"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                    <!------- Thought post form ------->
+                    <div class="thought-post-form-box">
+                        <div class="thought-post-form-header">
+                            <a><i class="flaticon-light45"></i> Thought</a>
+                        </div>
+                        <form method="post" action="">
+                            <div class="thought-post-form-content">
+                                <input name="post_type" value="thought" type="hidden"/>
+                                <input name="thought_content" type="text" placeholder="write your thought...">
+                            </div>
+                            <div class="thought-post-form-submit">
+                                <p><input class="radio-button" name="post_privacy" id="optionsRadios1" value="1" type="radio" required> public </p>
+                                <p><input class="radio-button" name="post_privacy" id="optionRadios2" value="2" type="radio" required> private </p>
+                                <button class="btn" type="submit"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                    <!------- Quote post form ------->
+                    <div class="quote-post-form-box">
+                        <form method="post" action="">
+                            <div class="quote-post-form-header">
+                                <a><i class="flaticon-quote2"></i> Quote</a>
+                            </div>
+                            <div class="quote-post-form-content">
+                                <input name="post_type" value="quote" type="hidden"/>
+                                <input name="post_privacy" value="1" type="hidden"/>
+                                <input name="quote_content" type="text" placeholder="write your quote..."/>
+                                <input name="quote_source" type="text" placeholder="write the source..."/>
+                            </div>
+                            <div class="quote-post-form-submit">
+                                <button class="btn" type="submit"> post</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                    </div>
+
+                    <div class="no-post-warning">
+                        Sorry, currently there are no posts for you. 
+                        Follow other people or companies to see thier posts.
+                        <i class="flaticon-smile"></i>
+                    </div>
+
+                    <!------- Topic post ------->
+                    <div class="topic-post-box">
+                        <div class="topic-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="topic-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="topic-post-content">
+                            I am the <strong>#CEO</strong> <strong>@ayttiq</strong> technologies, a company of #aypage.
+                            <i class="pull-right flaticon-earth17"></i>
+                            <div class="divider"></div>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div> <!------- / Topic post ------->
+
+                    <!------- Custom post ------->
+                    <div class="custom-post-box">
+                        <div class="custom-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="custom-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="custom-post-content">
+                            <i class="pull-right flaticon-lock24"></i>
+                            <p>Free ebooks for ever.</p>
+                            <p>download Free #ebooks free forever @web.</p>
+                            <div class="divider"></div>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div> <!------- / Custom post ------->
+
+                    <!------- Image post ------->
+                    <div class="image-post-box">
+                        <div class="image-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="image-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="image-post-content">
+                            <p><img alt="image" src="images/bitch.jpg"/></p>
+                            <p>here we write a <strong>#caption</strong> for an <strong>@video_post</strong></p>
+                            <div class="divider"></div>
+                            <i class="pull-right flaticon-lock24"></i>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div><!------- / Image post ------>
+
+                    <!------- Video post ------->
+                    <div class="video-post-box">
+                        <div class="video-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="video-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="video-post-content">
+                            <video controls>
+                                <source src="videos/VID-20121116-WA0001.mp4"/>
+                            </video>
+                            <p>here we write a <strong>#caption</strong> for an <strong>@video_post</strong></p>
+                            <div class="divider"></div>
+                            <i class="pull-right flaticon-lock24"></i>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div> <!------- / Video post ------->
+
+                    <!------- Link post ------->
+                    <div class="link-post-box">
+                        <div class="link-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="link-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="link-post-content">
+                            <i class="pull-right flaticon-lock24"></i>
+                            <p><a href=" http://www.ayttiq.com/aypage/discover-more-about.">  http://www.ayttiq.com/aypage/discover-more-about.</a></p>
+                            <p>download Free <strong> #ebooks</strong> free forever <strong> @web</strong>.</p>
+                            <div class="divider"></div>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div> <!------- / Link post ------->
+
+
+                    <!------- Quote post ------->
+                    <div class="quote-post-box">
+                        <div class="quote-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="quote-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div class="quote-post-content">
+                            <i class="pull-right flaticon-lock24"></i>
+                            <p><strong> "</strong>Your playing small does not serve the world, who are you not to be great, you have unlimited potential to successed <strong>"</strong>.</p>
+                            <p>Nelson Mandela</p>
+                            <div class="divider"></div>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div> <!------- / Quote post ------->
+
+                    <!------- Thought post ------->
+                    <div class="thought-post-box">
+                        <div class="thought-post-username"><a>@Asavela_mdindi</a></div>
+                        <div class="thought-post-user">
+                            <img alt="avatr" src="img/avatar.jpg"/>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="thought-post-content">
+                            <p>This is a thought Bubble, forks unser</p>
+                            <i class="pull-right flaticon-lock24"></i>
+                            <div class="divider"></div>
+                            <a href="#"><i class="flaticon-comment32"></i> 20 000</a>
+                            <a href="#"><i class="flaticon-user77"></i> 807</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div> <!------- / Thought post ------->
+                </div>
+
+                <div class="span4">
+                    <!------- active chats ------->
+                    <p class="active-chats-heading"> Active Chats</p>
+
+                    <div data-step="6" data-position="left" data-intro="This is a list of trending chats by people or companies you follow.">
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom active chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image active chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- video active chat ------->
+                        <div class="video-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- link active chat ------->
+                        <div class="link-active-chat">
+                            <a><i class="flaticon-video91"></i></a>
+                            <a href="http://asa.com">http://asa.com</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- thought active chat ------->
+                        <div class="thought-active-chat">
+                            <a><i class="flaticon-light45"></i></a>
+                            <a>About the my future.</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- quote active chat ------->
+                        <div class="quote-active-chat">
+                            <a><i class="flaticon-quote2"></i></a>
+                            <a>"Focus on the good"...</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- popular chats ------->
+                    <p class="active-chats-heading"> Popular Chats</p>
+
+                    <div data-step="7" data-position="left" data-intro="This is a list of trending chats by everyone or every company based on your location.">
+                        <!------- topic popular chat-->
+                        <div class="topic-active-chat">
+                            <a><i class="flaticon-comments16"></i></a>
+                            <a>Da new Jordan #ncaaa</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- custom popular chat ------->
+                        <div class="custom-active-chat">
+                            <a><i class="flaticon-font2"></i></a>
+                            <a>this is the content</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+
+                        <!------- image popular chat ------->
+                        <div class="image-active-chat">
+                            <a><i class="flaticon-picture13"></i></a>
+                            <a>Me myself & I, #awthand</a>
+                            <a><i class="flaticon-group41"></i> 10 215
+                                <i class="flaticon-speech59"></i> 10 215
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------- block user ------->
+                    <div class="block-user-bar">
+                        <a data-toggle="modal" href="#block-user-modal" role="button"><i class="flaticon-remove11"></i> block</a>
+                        <a href="#"><i class="flaticon-search19"></i> search</a>
+                        <a href="#"><i class="flaticon-bull1"></i> report</a>
+                    </div>
+
+                    <!------- block user modal ------->
+                    <div class="modal hide fade" id="block-user-modal" role="dialog">
+                        <div class="modal-dialog"></div>
+                        there is nothing
+                    </div>
+
+
+                    <!------- footer ------->
+                    <div class="mini-footer">
+                        <a href="help.php"> help</a>
+                        <a href="terms.php"> terms and conditions</a>
+                        <a href="privacy.php"> privacy</a>
+                        <a href="disclaimer.php"> disclaimer</a>
+                        <a href="ads.php"> ads</a>
+                        <div class="divider"></div>
+                        <p><strong> aypage</strong> is a product of<a href="http://www.ayttiq.com"> ayttiq technologies</a></p>
+                        <p>&copy; 2016, All rights reserved. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!----- JavaScripts ----->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/timeline-posts.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

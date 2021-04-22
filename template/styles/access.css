@@ -1,0 +1,936 @@
+/* =========================================================================================================
+                                             ACCESS STYLES 
+  ==========================================================================================================
+*/
+
+/*===========================================================================================================
+                                                GLOBAL STYLES 
+=============================================================================================================
+*/
+i{
+    color: #7b94b2;
+}
+.container > .alert-danger{
+    width: 455px;
+    font-size: large;
+    margin: 2px auto;
+}
+.signup-alert{
+    max-width: 420px;
+}
+/*===========================================================================================================
+                                            PROFILE PICTURE UPLOAD SECTION 
+=============================================================================================================
+*/
+.upload_profile_photo_section{
+    width: auto;
+}
+.profile_photo_area{
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.profile_photo_area img{
+    width: 120px;
+}
+.profile_photo_area:hover{
+    cursor: pointer;
+}
+.profile_photo_upload_area{
+    float: right;
+    padding: 2px;
+    width: 300px;
+}
+.upload_profile_photo_section > .profile_photo_upload_area > label {
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile_photo_upload_area {
+    float: right;
+    padding: 2px;
+    width: 300px;
+}
+.upload_profile_photo_section > .profile_photo_upload_area > button {
+    border: none;
+    background: #7b94b2;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+}
+.upload_profile_photo_section > .profile_photo_upload_area > button:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.upload_profile_photo_modal {}
+.upload_profile_photo_modal > modal-body {
+    padding: 0;
+}
+.upload_profile_photo_modal > .modal-footer > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.upload_profile_photo_modal > .modal-footer > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.upload_profile_photo_resize_component {
+	position: relative;
+	background: url(../img/gridme.png) repeat center center;
+	padding: 4em;
+	height: 280px;
+	max-width: 901px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.upload_profile_photo_overlay {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	z-index: 999;
+	width: 200px;
+	height: 200px;
+    border: solid 2px rgba(222,60,80,.9);
+	box-sizing: content-box;
+	pointer-events: none;    
+}
+.upload_profile_photo_overlay:after, .upload_profile_photo_overlay:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 204px;
+	height: 40px;
+    border-left: dashed 2px rgba(222,60,80,.9);
+	border-right: dashed 2px rgba(222,60,80,.9);
+}
+.upload_profile_photo_overlay:before {
+	top: 0;
+	margin-left: -2px;
+	margin-top: -40px;
+}
+.upload_profile_photo_overlay:after {
+	bottom: 0;
+	margin-left: -2px;
+	margin-bottom: -40px;
+}
+.upload_profile_photo_overlay-inner:after, .upload_profile_photo_overlay-inner:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 204px;
+    border-top: dashed 2px rgba(222,60,80,.9);
+	border-bottom: dashed 2px rgba(222,60,80,.9);
+}
+.upload_profile_photo_overlay-inner:before {
+	left: 0;
+	margin-left: -40px;
+	margin-top: -2px;
+}
+.upload_profile_photo_overlay-inner:after {
+	right: 0;
+	margin-right: -40px;
+	margin-top: -2px;
+}
+.resize-container {
+    position: relative;
+    display: inline-block;
+    cursor: move;
+    margin: 0 auto;
+}
+
+.resize-container img {
+    display: block
+}
+
+.resize-container:hover img,
+.resize-container:active img {
+    outline: 2px dashed rgba(222,60,80,.9);
+}
+
+.resize-handle-ne,
+.resize-handle-se,
+.resize-handle-nw,
+.resize-handle-sw {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(222,60,80,.9);
+    z-index: 999;
+}
+
+.resize-handle-nw {
+    top: -5px;
+    left: -5px;
+    cursor: nw-resize;
+}
+
+.resize-handle-sw {
+    bottom: -5px;
+    left: -5px;
+    cursor: sw-resize;
+}
+
+.resize-handle-ne {
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+.resize-handle-se {
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+}
+
+
+
+
+/*
+ * imgAreaSelect animated border style
+ */
+
+.imgareaselect-border1 {
+	background: url(../img/border-anim-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(../img/border-anim-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(../img/border-anim-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(../img/border-anim-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+	border: solid 1px #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-outer {
+	background-color: #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-selection {
+}
+
+/*=== sign up header ===*/
+.signup-header{
+    text-align:center;
+}
+.signup-header h3,h4{
+    line-height: 0.1em;
+}
+
+/*=============================================================================================================
+                                            THANK YOU OR CONFIRM PAGE 
+===============================================================================================================
+*/
+.welcome-thanku{
+    text-align:center;
+}
+.welcome-thanku > p > a > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.welcome-thanku > p > a > .btn i {
+    color: #fff;
+}
+.welcome-thanku > p > a > .btn:hover {
+    background: #829ddd;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;    
+}
+.confirm-details-grid{
+    background: #fff;
+    color: #808080;
+    border-radius: 5px;
+    padding: 8px;
+    margin: -15px 5px 5px 5px;
+}
+.confirm-details-grid h4{
+    line-height: 1em;
+}
+.confirm-details-grid > a i{
+    font-size: 1.5em;
+    margin: 0;
+    color: #829ddd;
+    float: right;
+    margin-top: -30px;
+}
+.confirm-details-grid i:hover{
+    text-decoration: none;
+    background: #F0E8E0;
+    border-radius: 5px;
+}
+.confirm-details-grid p{
+    padding: 1px;
+    margin: 5px;
+}
+.confirm-details-grid p:hover{
+    background: #F0E8E0;
+    border-radius: 5px;
+}
+.confirm-details-grid input{
+    border-radius: 5px;
+    border-color: #b5b5b5;
+    margin-top: 2%;
+    height: 18px;
+}
+.confirm-details-grid > .divider{
+    margin: 5px 20px;
+}
+.details-header{
+    width: 445px;
+}
+details-name{
+    float: left;
+    width: 100px;
+    margin: 0 5px;
+}
+.details-edit{
+    float: right;
+    width: 100px;
+    margin: 0 5px;
+}
+
+
+/*=============================================================================================================
+                                                BASIC SIGN UP PAGE 
+===============================================================================================================
+*/
+.basic-signup-header{
+    font-size: larger;
+    text-align: center;
+    color: #808080;
+}
+.basic-signup-header > .basic-signup-header-topic{
+    font-size: 3em;
+    margin: 5px;
+    line-height: 1em;
+}
+.basic-signup-form{
+    background: #fff;
+    border-radius: 10px;
+    color: #808080;
+    font-size: large;
+    padding: 5px;
+    width: 500px;
+    margin: 5px auto;
+}
+.basic-signup-form > form {
+    margin: 0;
+}
+.basic-signup-form > form > p {
+    line-height: 1em;
+}
+.basic-signup-form > p {
+    line-height: 1.5em;
+    margin: 0;
+}
+.basic-signup-form > form > p > a, .basic-signup-form > p > a {
+    text-decoration: none;
+}
+.basic-signup-form > form > p > a:hover, .basic-signup-form > p > a:hover {
+    background:#808080;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;    
+}
+.basic-signup-form > form > input{
+    font-size: 20px;
+}
+.basic-signup-form > form > input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.basic-signup-form > form > input[type='text'], input[type='password']{
+    background: #F0E8E0;
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+.basic-signup-form > form > .btn{
+    background: #7b94b2;
+    color: #FFFFFF;
+    width: 99.6%;
+    height: 45px;
+    margin: 0;
+}
+.basic-signup-form > form > .btn:hover{
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.basic-signup-form > form > .basic-signup-options{
+    background: #F0E8E0;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px;
+}
+.basic-signup-form > form > .basic-signup-options > input[type="radio"]:not(old){
+    width: 20px;
+    height: 20px;
+}
+
+
+/*=============================================================================================================
+                                                BASIC SIGN IN PAGE 
+===============================================================================================================
+*/
+.normal-signin-form{
+    background: #fff;
+    border-radius: 10px;
+    width: 500px;
+    margin: 5px auto;
+    color: #808080;
+    padding: 5px;
+    font-size: large;
+}
+.normal-signin-form a{
+    text-decoration: none;
+}
+.normal-signin-form a:hover{
+    background:#808080;
+    color:#fff;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+}
+.normal-signin-form input{
+    font-size: 20px;    
+}
+.normal-signin-form input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;    
+}
+.normal-signin-form > form > input[type='text']{
+    border: none;
+    border-radius: 5px;
+    width: 98%;
+    height: 40px;
+    background: #F0E8E0;
+}
+.normal-signin-form > form > .btn{
+    color: #fff;
+    background: #7b94b2;
+    width: 100%;
+    height: 45px;
+}
+.normal-signin-form > form > .btn:hover{
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.normal-signin-form-header{
+    font-size: larger;
+    text-align: center;
+    color: #808080;
+}
+.normal-signin-form-topic{
+    font-size: 3em;
+    margin: 5px;
+    line-height: 1em;
+}
+.user-known-signin-grid{
+    text-align: center;
+}
+.user-known-signin-avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.user-known-signin-name{
+    font-size: larger;
+    font-weight: 500;
+    color: #808080;
+}
+.user-known-signin-type{}
+
+/*==========================================================================================================
+                                            ACCESS DENIED PAGE 
+============================================================================================================
+*/
+.access-denied-header-grid{
+    text-align: center;
+}
+.access-denied-header{
+    font-size: 3em;
+    color: #808080;
+    line-height: 1em;
+}
+.access-dinied-topic{
+    font-size: larger;
+    color: #808080;
+}
+.access-denied-header-grid > p > a > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.access-denied-header-grid > p > a > .btn i {
+    color: #FFF;
+}
+.access-denied-header-grid > p > a > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+/*=========================================================================================================
+                                                ERROR PAGE 
+===========================================================================================================
+*/
+
+.error-page-header-grid{
+    text-align: center;
+}
+.error-page-header{
+    font-size: 3em;
+    color: #f00;
+    line-height: 1em;
+}
+.error-page-topic{
+    font-size: larger;
+    color: #808080;
+}
+.error-page-header-grid > p > a > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.error-page-header-grid > p > a > .btn i {
+    color: #fff;
+}
+.error-page-header-grid > p > a > .btn:hover {
+    background: #829ddd;
+}
+
+/*=========================================================================================================
+                                            EDIT INFORMATION PAGE 
+===========================================================================================================
+*/
+
+.edit-information-header-grid{
+    text-align: center;
+}
+.edit-information-header{
+    font-size: 3em;
+    color: #808080;
+    line-height: 1em;
+}
+.edit-information-topic{
+    font-size: larger;
+    color: #808080;
+}
+.edit-information-alert-bar {
+    padding: 2px;
+}
+.edit-information-alert-bar > i {
+    color: #f00;
+}
+.edit-information-grid{
+    background: #fff;
+    border-radius: 5px;
+    width: 450px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #808080;
+}
+.edit-information-grid p{
+    padding-top: 5px;
+    margin: 1px;
+}
+.edit-information-grid-header{
+    color: #808080;
+    font-size: large;
+}
+.edit-information-profile-photo{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+img.edit-information-profile-photo{
+    width: 120px;
+}
+.edit-information-grid input{
+    background: #F0E8E0;
+    border-radius: 5px;
+    border: none;
+}
+.edit-information-grid input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.edit-information-grid input[type='text']{
+    width: 74%;
+    margin-left: 20px;
+}
+.edit-information-grid textarea{
+    border-radius: 5px;
+    border: none;
+    background: #F0E8E0;
+    margin-left: 70px;
+    width: 74%;
+}
+.edit-information-grid textarea:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.edit-information-grid input[type='url']{
+    margin-left: 40px;
+    width: 74%;
+}
+.edit-information-grid input[type='tel']{
+    margin-left: 25px;
+    width: 74%;
+}
+.edit-information-grid input[type='email']{
+    margin-left: 30px;
+    width: 74%;
+}
+
+
+.edit-information-company-grid{
+    background: #fff;
+    border-radius: 5px;
+    width: 450px;
+    margin: 5px auto;
+    padding: 5px;
+    color: #808080;
+}
+.edit-information-company-grid input{
+    background: #F0E8E0;
+    border-radius: 5px;
+    border: none;
+    color: #808080;
+    font-size: 18px;
+}
+.edit-information-company-grid input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.edit-information-company-grid input[type='url']{
+    margin-left: 20px;
+    width: 75%;
+}
+.edit-information-company-grid input[type='tel']{
+    margin-left: 8px;
+    width: 74%;
+}
+.edit-information-company-grid input[type='email']{
+    margin-left: 39px;
+    width: 74%;
+}
+.edit-information-company-grid input[type='text']{
+    margin-left: 20px;width: 59%;
+}
+.edit-information-company-grid textarea{
+    background: #F0E8E0;
+    border-radius: 5px;
+    margin-left: 25px;
+    border: none;
+    width: 74%;
+}
+.edit-information-company-grid textarea:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;            
+}
+/*========================================================================================================
+                                            THANK YOU PAGE 
+==========================================================================================================
+*/
+.thank-you-page-header-grid{
+    text-align: center;    
+}
+.thank-you-page-header{
+    font-size: 3em;
+    color: #808080;
+    line-height: 1em;
+}
+.thank-you-page-topic{
+    font-size: larger;
+    color: #808080;
+}
+.thank-you-page-grid{
+    background: #fff;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    color: #808080;
+    text-align: center;
+}
+.thank-you-grid-username{
+    font-size: 25px;
+    font-weight: 500;
+    color: #808080;
+}
+.thank-you-grid-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #808080;
+    margin-top: 15px;
+}
+.thank-you-grid-avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    margin: 5px auto;
+    z-index: 100;
+}
+.thank-you-grid-avatar img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    margin: 0 auto;
+    z-index: 100;
+}
+.thank-you-grid-type{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -25px;
+    margin-left: 40%;
+    position: relative;
+    z-index: 200;
+    border: 5px solid #fff;
+}
+.thank-you-grid-type i{
+    margin-top: auto;
+}
+.thank-you-grid-body p{
+    line-height: 1em;
+}
+.thank-you-grid-footer{
+    background: #F0E8E0;  
+    margin: 0 -5px -5px -5px;
+    font-size: large;
+}
+.thank-you-grid-footer :hover{
+    text-decoration: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/*========================================================================================================
+                                    SIGN UP INDIVIDUAL / COMPANY PAGE 
+==========================================================================================================
+*/
+#progress_loader {
+    display: none;
+}
+.full-signup-indiv-container{
+    width: 470px;
+    margin: 0 auto;    
+}
+.full-signup-indiv-header-grid{
+    text-align: center;
+    margin: 0;
+}
+.full-signup-indiv-header{
+    font-size: 3em;
+    color: #808080;
+    line-height: 1em;
+}
+.full-signup-indiv-topic{
+    font-size: larger;
+    color: #808080;
+}
+.profile-prev-grid{
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 20px;
+}
+.profile-prev-name{
+    font-size: 25px;
+    font-weight: 500;
+    color: #808080;
+}
+.profile-prev-avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    margin: 5px auto;
+    z-index: 100;
+}
+.profile-prev-avatar img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    margin: 0 auto;
+    z-index: 100;
+}
+.profile-prev-type{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #F0E8E0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -25px;
+    margin-left: 40%;
+    position: relative;
+    z-index: 200;
+    border: 5px solid #fff;
+}
+.full-signup-indiv-grid{
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #808080;
+}
+.full-signup-indiv-grid-h{
+    font-size: 20px;
+    font-weight: 500;
+}
+.full-signup-indiv-grid > form {
+    margin: 0;
+}
+.full-signup-indiv-grid input{
+    font-size: 20px;
+}
+.full-signup-indiv-grid input:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.full-signup-indiv-grid input[type='file']{
+    font-size: 15px;
+}
+.full-signup-indiv-grid input[type='text'], input[type='email'], input[type='tel'], textarea {
+    background: #F0E8E0;
+    border-radius: 5px;
+    border: none;
+}
+.full-signup-indiv-grid > form > p > input[type='text']{
+    margin-left: 35px;
+    width: 71%;
+}
+.full-signup-indiv-grid > form > p > input[type='tel']{
+    margin-left: 38px;
+    width: 72%;
+}
+.full-signup-indiv-grid > form > p > input[type='email']{
+    margin-left: 41px;
+    width: 73%;
+}
+.full-signup-indiv-grid > form > p > textarea{
+    margin-left: 85px;
+    width: 71%;
+}
+.full-signup-indiv-grid > form > p > textarea:focus{
+    outline : 1px auto #829ddd;
+    border-radius: 5px;        
+}
+.full-signup-indiv-grid > form > p > button{
+    width: 99.5%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background: #7b94b2;
+    color: #fff;
+}
+.full-signup-indiv-grid > form > p > button i {
+    color: #fff;
+}
+.full-signup-indiv-grid > form > p > button:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+/*======================================================================================================
+                                        SIGNED OUT PAGE 
+========================================================================================================
+*/
+.signedout-page-header-grid{
+    text-align: center;
+}
+.signedout-page-header{
+    font-size: 3em;
+    color: #808080;
+    line-height: 1em;
+}
+.signedout-page-desc{
+    font-size: larger;
+    color: #808080;
+}
+.signedout-page-header-grid > p > a > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.signedout-page-header-grid > p > a > .btn i {
+    color: #fff;
+}
+.signedout-page-header-grid > p > a > .btn:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+

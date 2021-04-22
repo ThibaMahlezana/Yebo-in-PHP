@@ -1,0 +1,57 @@
+/* ===============================================================
+                          SOCIAL STYLES 
+  ================================================================ 
+*/
+
+.soc-link{
+    width:auto;
+    height:60px;
+    padding:5px;
+    background: #FFF;
+    margin:5px 0;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    position:relative;
+}
+
+.soc-link-icon{
+    font-size:x-large;
+    position:relative;
+    top:30%;
+    left:1%;
+}
+.soc-link-icon i{
+    color:#829ddd;
+}
+
+.soc-link-verf{}
+.soc-link-title{
+    position:relative;
+    top:-50%;
+    left:12%;
+    line-height:1.5em;
+}
+
+.soc-link-desc{
+    position:relative;
+    top:-58%;
+    left:12%;
+    color:#808080;
+}
+
+.soc-link-conn{
+    font-size:smaller;
+    color:#808080;
+    position:relative;
+    top:-130%;
+    left:85%;
+}
+
+.soc-link-btnconn{
+    font-size:small;
+    color:#808080;
+    position:absolute;
+    top:0;
+    left:97%;
+}

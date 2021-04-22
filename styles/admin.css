@@ -1,0 +1,218 @@
+/***************************************************************************************************************
+                                                ADMIN
+  **************************************************************************************************************/
+
+
+/***************************************************************************************************************
+                                                ADMIN NAVBAR
+  **************************************************************************************************************/
+.admin-nav-bar {
+    background: #fff;
+    padding: 5px;
+    width: 99%;
+    color: #808080;
+}
+
+.admin-nav-bar > p {
+    display: inline-block;
+    width: 30%;
+    font-size: 20px;
+    margin: 0;
+}
+.admin-nav-bar > p > a:hover {
+    text-decoration: none;
+    background: #F0E8E0;
+    border-radius: 5px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+.admin-nav-bar > p:nth-of-type(2) > a {
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.admin-nav-bar > p:nth-of-type(2) > a > span {
+    color: #fff;
+    background: #f00;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 2px;
+}
+.admin-nav-bar > p:nth-of-type(2) > a > i {
+    font-size: 15px;
+}
+.admin-nav-bar > p:nth-of-type(3) {
+    text-align: right;
+}
+
+
+/***************************************************************************************************************
+                                                ADMIN USER BAR
+  **************************************************************************************************************/
+.admin-user-bar {
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px;
+}
+.admin-user-bar:hover {
+    background: #F0E8E0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+
+.admin-user-bar > p {
+    margin: 0;
+    color: #808080;
+    font-weight: 500;
+    font-size: 15px;
+}
+.admin-user-avatar {
+    float: left;
+    margin-right: 8px;
+}
+.admin-user-avatar > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.admin-user-content > p {
+    margin: 0;
+    color: #808080;
+}
+.admin-user-content > p:nth-of-type(1) {
+    color: #7b94b2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/***************************************************************************************************************
+                                                OVERRALL STATS
+  **************************************************************************************************************/
+.admin-overall-stats {
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px;
+}
+.admin-overall-stats > p {
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+}
+.admin-overall-stats > p > i {
+    background: #94ab9e;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+}
+.admin-quick-stats-view {
+    background: #F0E8E0;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.admin-quick-stats-view:hover {
+    background: #d2c3c3;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;        
+}
+
+.admin-quick-stats-view > p {
+    margin: 8px 0;
+}
+.admin-quick-stats-view > p > i {
+    font-size: 3em;
+    color: #fff;
+    background: #94ab9e;
+    border-radius: 50%;
+}
+.admin-quick-stats-view > p:nth-of-type(2) {
+    color: #808080;
+    font-size: 25px;
+}
+.admin-quick-stats-view > p:nth-of-type(3) {
+    color: #808080;
+}
+
+
+/***************************************************************************************************************
+                                                ANOUNCEMENT
+  **************************************************************************************************************/
+.admin-announcement-bar {
+    background: #fff;
+    border-radius: 10px;
+    padding: 3px 3px 0 3px;
+    margin: 5px 0;
+}
+.admin-alert {
+    box-shadow: none;
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 2px;
+}
+.admin-announcement-bar > p {
+    font-size: 16px;
+    color: #808080;
+    font-weight: 500;
+}
+.admin-announcement-bar > p > i {
+    color: #fff;
+    background: #94ab9e;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.admin-announcement-bar > form > input[type='text'] {
+    border-radius: 5px;
+    width: 96%;
+    border: none;
+    background: #F0E8E0;
+    font-size: 16px;
+}
+.admin-announcement-bar > form > input[type='text']:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+    box-shadow: none;    
+}
+
+.admin-announcement-bar > form > textarea {
+    border-radius: 5px;
+    width: 96%;
+    border: none;
+    background: #F0E8E0;
+    font-size: 16px;
+}
+.admin-announcement-bar > form > textarea:focus {
+    outline : 1px auto #829ddd;
+    border-radius: 5px;
+    box-shadow: none;    
+}
+
+.admin-announcement-bar > form > .btn {
+    background: #7b94b2;
+    color: #fff;
+    width: 99.8%;
+    margin: 0 0 5px 0;
+    height: 40px;
+}

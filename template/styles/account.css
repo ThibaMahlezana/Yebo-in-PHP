@@ -1,0 +1,80 @@
+/* ===============================================================
+                          ACCOUNT STYLES 
+  ================================================================ 
+*/
+.account-cover{
+    width: 100%;
+    background: #9ec45f;
+    height: 150px;
+    z-index: 1;
+}
+.account-cover-profs{
+    margin-top: -100px;
+}
+.account-cover-profiles{
+    z-index: 2;
+    font-size: x-large;
+    float: left;
+}
+.account-cover-contacts{
+    z-index: 2;
+    font-size: x-large;
+    float: left;
+    margin-left: 30px;
+}
+.account-cover-mobile{
+    z-index: 2;
+    font-size: x-large;
+    float: left;
+    margin-left: 30px;
+}
+.account-cover-extras{
+    z-index: 2;
+    font-size: x-large;
+    float: left;
+    margin-left: 30px;
+}
+.account-cover-details{}
+.account-avatar{
+    z-index: 2;
+    background: #F0E8E0;
+    border-radius: 6px;
+    height: 150px;
+    width: 150px;
+    margin-top: -90px;
+    margin-left: 25px;
+    float: left;
+}
+.account-links{
+    z-index: 2;
+    font-size: 50px;
+    padding-top: 50px;
+    margin-left: 150px;
+    color: #fff;
+    float: left;
+}
+.account-stats{
+    float: left;
+    z-index: 2;
+    text-align: center;
+}
+.account-stats1{
+    float: left;
+    margin-left: 30px;
+}
+.account-stats2{
+    float: left;
+    margin-left: 30px;
+}
+.account-stats3{
+    float: left;
+    margin-left: 30px;
+}
+
+.account-details{}
+.accounts{
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}

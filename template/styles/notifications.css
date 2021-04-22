@@ -1,0 +1,58 @@
+/* ===============================================================
+                          NOTIFICATION STYLES 
+  ================================================================ 
+*/
+.noti-mainbar{
+    background:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    width:100%;
+    height:auto;
+    padding:5px;
+    margin:5px;
+}
+.noti-feed{
+    padding:2px;
+    margin:5px 0;
+    width:auto;
+    height:auto;
+    position:static;
+}
+.noti-feed-path-one{
+    float:left;
+    position:relative;
+    top:0;
+    width:10%;
+}
+.noti-feed-path-two{
+    float:right;
+    position:static;
+    top:0;
+    width:90%;
+}
+.noti-feed-name{
+    color:#808080;
+}
+.noti-feed-avatar{}
+.noti-feed-avatar i{
+    font-size:xx-large;
+}
+.noti-feed-avatar img{
+    display:block;
+    width:48px;
+}
+.noti-feed-body{
+    background:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:5px;
+    margin:5px;
+}
+.noti-feed-time{
+    color:#808080;
+    font-size:x-small;
+    text-align:right;
+    margin-right:5%;
+}

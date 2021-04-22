@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Welcome to aypage - Log in, sign in and more</title>
+    <!-- styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/iconFont.css" rel="stylesheet" type="text/css" />
+    <link href="css/metro-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/default-style.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/progression.min.js"></script>
+	<script>
+	    jQuery(document).ready(function ($) {
+
+	        $("#myform").progression({
+	            tooltipWidth: '200',
+	            tooltipPosition: 'right',
+	            tooltipOffset: '50',
+	            showProgressBar: true,
+	            showHelper: true,
+	            tooltipFontSize: '14',
+	            tooltipFontColor: 'fff',
+	            progressBarBackground: 'fff',
+	            progressBarColor: '6EA5E1',
+	            tooltipBackgroundColor: 'a2cbfa',
+	            tooltipPadding: '10',
+	            tooltipAnimate: true
+	        });
+
+	    });
+
+	</script>
+
+</head>
+<body>			       
+    <div class="main">
+        <div class="wrap">
+            <div class="row">
+                <div class="signup-header">
+                    <h3>Sign up </h3>
+                </div>
+                <div class="span8">
+                    <div class="signup-container">
+                    <h4>personal details</h4>
+                        <div class="divider"></div>
+                        <p>avatar</p>
+                        <div class="sign-up-img-container"><img src="images/aypage_icon-user.png" /></div>
+                    <form class="inline">
+                        <p><input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Last Name" />
+                        </p>
+                    </form>
+                    <form>
+                        <p>Date of birth</p>
+                        <input type="date" />
+                        <p><i class="icon-location"></i> Location</p>
+                        <input type="text" />
+                        <p><i class="icon-link"></i> personal site (URL)</p>
+                        <input type="url" placeholder="http://www." />
+                        <p>School</p>
+                        <input type="text" />
+                        <p>Work</p>
+                        <input type="text" />
+                        <p><input type="checkbox" /> Are you currently working?</p>
+                        <p><input type="checkbox" /> Are you currently studging</p>
+                    </form>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="signup-container">
+                        <h4>preview</h4>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="span12">
+                <p><button class="pull-right">procceed <i class="icon-arrow-right-2"></i></button></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-area"> aypage is a product of<a href="http://www.ayttiq.com"> ayttiq technologies</a>
+        &#169.all rights reserved
+    </div>
+  </body>
+</html>
+

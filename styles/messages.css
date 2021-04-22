@@ -1,0 +1,421 @@
+/***************************************************************************************************************
+                                                MESSAGES
+***************************************************************************************************************/
+
+
+/***************************************************************************************************************
+                                             COMPOSE MESSAGE FORM
+***************************************************************************************************************/
+.compose_message_box_alert {
+    border-radius: 10px;
+    margin: 2px 0;
+    font-size: large;
+}
+.compose_message_box {
+    background: #fff;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    margin: 5px 0;
+}
+
+.compose_message_box > form {
+    margin: 0 5px;
+    padding: 0;
+}
+
+#compose_message_view {
+    display:  none;
+}
+
+.compose_message_box_header {
+    font-weight: 500;
+    color: #808080;
+    font-size: 18px;
+}
+.compose_message_box_header:hover{
+    cursor: pointer;
+    background: #F0E8E0;
+}
+
+.compose_message_box_header > i {
+    background: #8bc0a1;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.compose_message_box_recipient {
+    padding: 0 0 0 8px;
+    margin: 0;
+    font-size: large;
+    color: #808080;
+}
+.compose_message_box_recipient > input[type="text"]:focus, .compose_message_box_content > textarea:focus {
+    box-shadow: none;
+    outline : 1px auto #829ddd;
+    border-radius: 5px; 
+}
+.compose_message_box_recipient > input[type="text"] {
+    background: #F0E8E0;
+    border-radius: 5px;
+    border: none;
+    width: 81%;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    color: #7b94b2;
+}
+.compose_message_box_content {
+    padding: 0 4px;
+}
+.compose_message_box_content > textarea {
+    margin: 0;
+    width: 97%;
+    padding: 8px;
+    font-size: large;
+    background: #F0E8E0;
+    border: none;
+    border-radius: 5px;
+}
+.compose_message_box_footer {
+    padding: 5px;
+}
+.compose_message_box_footer > .compose_message_box_footer_links {
+    float: left;
+    width: 60%;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.compose_message_box_footer > .compose_message_box_footer_links a:hover {
+    text-decoration: none;
+    background: #F0E8E0;
+    border-radius: 5px;
+}
+a.compose_message_box_footer_counter {
+    color: #808080;
+    font-size: 15px;
+}
+a.compose_message_box_footer_counter:hover {
+    text-decoration: none;
+}
+.compose_message_box_footer > button {
+    float: right;
+    font-size: large;
+    border-radius: 5px;
+    color: #fff;
+    background: #7b94b2;
+    border: none;
+}
+.compose_message_box_footer > button:hover {
+    background: #829ddd;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.compose_message_box_footer > button i {
+    color: #fff;
+    border: none;
+}
+
+
+#display {
+    width: auto;
+    display: none;
+    border-left: solid 1px #dedede;
+    border-right: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.display_box {
+    padding: 2px; 
+    border-top: solid 1px #dedede; 
+    height: 30px;
+}
+.display_box > span:nth-of-type(1), .display_box > span:nth-of-type(2){
+    font-size: 18px;
+    color: #808080;
+}
+.display_box > span:nth-of-type(3) {
+    color: #7b94b2;
+}
+
+.display_box:hover {
+    background: #F0E8E0;
+    color : #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+#shade {
+    background-color:#00CCFF;
+}
+
+
+/******************************************************************************************************************
+                                             RECENT MESSAGES    
+*******************************************************************************************************************/
+.recent_messages_section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px 0;
+}
+.recent_messages_section > p{
+    text-align: center;
+    margin: 0;
+    line-height: 1.2em;
+}
+.recent_messages_section_header {
+    padding: 2px 5px;
+    color: #808080;
+}
+.recent_messages_section_header p:nth-child(1) {
+    float: left;
+    width: fit-content;
+    font-size: 18px;
+}
+.recent_messages_section_header p:nth-child(2) {
+    float: right;
+    width: fit-content;
+}
+.recent_message_box {
+    padding: 2px;
+    margin: 2px 0;
+    border: solid #dfe2c8;
+    background: #dfe2c8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.recent_message_box:hover {
+    background: #FFF;
+    border: solid #dedede;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.recent_message_box_photo {
+    border: solid 3px #FFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+}
+.recent_message_box_photo img {
+    width: 45px;
+}
+.recent_message_box_body {
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #808080;
+    position: relative;
+    z-index: 1;
+}
+.recent_message_box_body > span:nth-of-type(1){
+    color: #7b94b2;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.recent_message_box > span:nth-of-type(1) {
+    color: #fd7e7e;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -25px;
+    padding-left: 5px;
+    float: right;
+    background: #dfe2c8;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ==========================================================================================================
+                                         CHAT MESSAGES (LOGGED IN USER)  
+  =========================================================================================================== 
+*/
+.message_chat_box-grid {
+    height: 520px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 3px;
+}
+.message_chat_box-validation {
+    background: #fff;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 5px;
+}
+
+.message_chat_box-grid > form > div.message_chat_area {
+    background: #F0E8E0;
+    border-radius: 10px;
+    margin: -3px -3px 6px -3px;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 420px;
+}
+.message_chat_box-grid > form > div.message_chat_reply_area > textarea {
+    border-radius: 5px;
+    width: 75%;
+    border: solid 2px #b7c2dd;
+    font-size: 16px;
+}
+.message_chat_box-grid > form > div.message_chat_reply_area > button {
+    width: fit-content;
+}
+.message_chat_box-grid > form > div.message_chat_reply_area > .btn {
+    background: #7b94b2;
+    color: #fff;
+}
+.message_chat_box-grid > form > div.message_chat_reply_area > .btn > i {
+    color: #fff;
+}
+.message_chat_box-grid > form > div.message_chat_reply_area > span {
+    margin: 0;
+    display: inline-block;
+}
+.message_chat_box {
+    width: fit-content;
+    border: solid 3px #FFF;
+    padding: 1px;
+    margin: 5px 0;
+    background: #FFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;   
+    z-index: -1; 
+}
+.message_chat_box:hover {
+    background: #f5f4f4;
+    border: solid 3px #FFF;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.message_chat_box_photo {
+    border: solid 3px #FFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+}
+.message_chat_box > span:nth-of-type(1) {
+    color: #7b94b2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.message_chat_box > span:nth-of-type(2) {
+    color: #808080;
+}
+
+.message_chat_box > a {
+    color: #fd7e7e;
+    font-weight: 500;
+    margin: 0 2px;    
+}
+.message_chat_box > a:hover {
+    text-decoration: none;
+}
+.load-more-messages-btn {
+    background: #7b94b2;
+    border-radius: 5px;
+    font-size: small;
+    width: 100px;
+    text-align: center;
+    margin: -2px auto 5px auto;
+    line-height: 1.5em;
+}
+.load-more-messages-btn:hover {
+    background: #829ddd;
+    cursor: pointer;
+}
+.load-more-messages-btn > a {
+    color: #fff;
+}
+.load-more-messages-btn > a:hover {
+    text-decoration: none;
+}
+
+/* ==========================================================================================================
+                                         CHAT MESSAGES (RECIPIENT)  
+  =========================================================================================================== 
+*/
+.message_chat_box-reply {
+    float: right;
+    width: fit-content;
+    border: solid 3px #FFF;
+    padding: 1px;
+    margin: 2px 0;
+    background: #FFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 20px;    
+    text-align: right;
+}
+.message_chat_box-reply:hover {
+    background: #f5f4f4;
+    border: solid 3px #FFF;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+ 
+.message_chat_box_photo_reply {
+    border: solid 3px #FFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right;
+    margin-right: 5px;
+}
+.message_chat_box-reply > span:nth-of-type(1) {
+    color: #7b94b2;
+    font-weight: 500;
+    font-size: 18px;
+    float: right;
+    margin-left: 5px;
+}
+
+.message_chat_box-reply > span:nth-of-type(2) {
+    color: #808080;
+}
+
+.message_chat_box-reply > a {
+    color: #fd7e7e;
+    font-weight: 500;
+    margin: 0 2px;
+}
+.message_chat_box-reply > a:hover {
+    text-decoration: none;
+}

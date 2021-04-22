@@ -1,0 +1,32 @@
+/***************************************************************************************************************
+                                             TERMS AND CONDITIONS
+  **************************************************************************************************************/
+.terms-header {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: #808080;
+    margin: 5px 0;
+    font-weight: 500;
+}
+.terms-header > a {
+    color: #808080;
+}
+.terms-header > a:hover {
+    text-decoration: none;
+    color: #7b94b2;
+}
+.terms-header:hover{
+    background: #F0E8E0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;    
+}
+.terms-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}

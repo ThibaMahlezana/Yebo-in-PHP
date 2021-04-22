@@ -1,0 +1,68 @@
+/* ===============================================================
+                          SEARCH STYLES 
+  ================================================================ 
+*/
+.search-grid{
+    background:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:5px 5px 0;
+}
+.search-bar{
+    margin:5px 5px 0;
+    padding:0; 
+}
+.search-bar input{
+    background:#b5b5b5;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding:6px;
+    width:100%;
+    font-size:large;
+}
+.search-bar p{
+    color:#808080;
+}
+.search-bar-content{
+    float:left;
+    width:90%;
+    margin:2px 2px 0;
+}
+.search-bar-icon{
+    float:right;
+}
+.search-bar-icon i{
+    color:#808080;
+    font-size:larger;
+    padding:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    display:block;
+    border:1px solid #b5b5b5;
+}
+.search-bar-icon:hover{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:#808080;
+    color:#fff;
+}
+.search-bar-icon a:hover{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:#808080;
+    color:#fff;
+}
+.search-bar-icon i:hover{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:#808080;
+    color:#fff;
+    text-decoration:none;
+}
