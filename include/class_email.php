@@ -9,15 +9,15 @@
             global $mail;
 
             $mail->isSMTP();
-            $mail->Host = 'mail.ayttiq.com';
+            $mail->Host = 'EMAIL-HOST-URL';
             $mail->SMTPAuth = TRUE;
-            $mail->Username = 'info@ayttiq.com';
-            $mail->Password = 'Ayttiq-aypage12';
+            $mail->Username = 'EMAIL_USERNAME';
+            $mail->Password = 'EMAIL-PASSWORD';
             $mail->SMTPSecure = 'tls';
-            $mail->Port = 25;
+            $mail->Port = 'PORT';
 
-            $mail->From = 'info@ayttiq.com';
-            $mail->FromName = 'aypage';
+            $mail->From = 'EMAIL FROM';
+            $mail->FromName = 'NAME';
             $mail->addAddress($recipient_address, $recipient_name);
             $mail->isHTML(TRUE);
 

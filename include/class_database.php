@@ -9,7 +9,7 @@
         // CONNECTING TO THE DATABASE
         private function connection(){
 
-            $mysqli = mysqli_connect("localhost", "root", "", "aypage-db");
+            $mysqli = mysqli_connect("SERVER", "USERNAME", "PASSWORD", "DATABASE-NAME");
 
             if (mysqli_connect_errno()) {
                 echo mysqli_connect_error();
